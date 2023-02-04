@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version T-2022.03-SP4 for linux64 -- Aug 24, 2022
-#@ # Date:   Thu Feb  2 18:17:09 2023
+#@ # Date:   Fri Feb  3 21:28:55 2023
 #@ # Run by: jtschir1@sig4.eecs.wsu.edu
 #@ 
 
@@ -8619,34 +8619,66 @@ source /net/ic/tools/synopsys/syn/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /net/ic/tools/synopsys/syn/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /net/ugrads/jtschir1/pvt/ee434/tut_DC/syn_add8.tcl
-#@ # -- Starting source /net/ugrads/jtschir1/pvt/ee434/tut_DC/syn_add8.tcl
+source -echo -verbose /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
+#@ # -- Starting source /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
 
 #@ # Set up the libraries.
 #@ set link_library {./nangate.db}
 #@ set target_library {./nangate.db}
 #@ 
-#@ read_file -format verilog {add8.v}
+#@ set design_name VCondSumAdder_256
 #@ 
+#@ # Read in a verilog file.
+#@ read_file -format verilog {cond_sum_adder_256.v}
 #@ 
-#@ # -- End source /net/ugrads/jtschir1/pvt/ee434/tut_DC/syn_add8.tcl
+#@ # Set the top-level module.
+#@ current_design $design_name
+#@ 
+#@ # Timing constraints
+#@ set_max_delay 0.8 -from {in_*} -to {out_*}
+#@ 
+#@ # Set max. fanout and max. capacitance.
+#@ set_max_fanout 8 [get_designs $design_name]
+#@ set_max_capacitance 0.1 [get_designs $design_name]
+#@ 
+#@ # compile
+#@ compile -exact_map
+#@ 
+#@ # -- End source /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
 
-set_max_delay 2 -from {i_*} -to {o_*}
+report_timing
+report_area
+report_power
+set_max_delay 0.50 -from {in_*} -from {out_*}
+set_max_delay 0.50 -from {in_*} -to {out_*}
 compile -exact_map
 report_area
 report_power
-report timing
 report_timing
-set_max_delay 0.5 -from {i_*} -to {o_*}
-report_timing
+set_max_delay 0.25 -from {in_*} -to {out_*}
 compile -exact_map
 report_area
 report_power
 report_timing
-set_max_delay 0.6 -from {i_*} -to {o_*}
-report_timing
+set_max_delay 0.125 -from {in_*} -to {out_*}
 compile -exact_map
-report_power
 report_area
+report_power
 report_timing
+set_max_delay 0.375 -from {in_*} -to {out_*}
+compile -exact_map
+report_area
+report_power
+report_timing
+set_max_delay 0.4375 -from {in_*} -to {out_*}
+compile -exact_map
+report_area
+report_power
+report+timing
+report_timing
+out_S[170]
+set_max_delay 0.5625 -from {in_*} -to {out_*}
+compile -exact_map
+report_area
+report_power
 report_timing
