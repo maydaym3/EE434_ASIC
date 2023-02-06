@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version T-2022.03-SP4 for linux64 -- Aug 24, 2022
-#@ # Date:   Fri Feb  3 21:28:55 2023
+#@ # Date:   Sun Feb  5 21:50:50 2023
 #@ # Run by: jtschir1@sig4.eecs.wsu.edu
 #@ 
 
@@ -8619,17 +8619,17 @@ source /net/ic/tools/synopsys/syn/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /net/ic/tools/synopsys/syn/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
-#@ # -- Starting source /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
+source -echo -verbose /net/ugrads/jtschir1/pvt/ee434/lab1/carry_lookahead_adder_128.tcl
+#@ # -- Starting source /net/ugrads/jtschir1/pvt/ee434/lab1/carry_lookahead_adder_128.tcl
 
 #@ # Set up the libraries.
 #@ set link_library {./nangate.db}
 #@ set target_library {./nangate.db}
 #@ 
-#@ set design_name VCondSumAdder_256
+#@ set design_name VCLA_128
 #@ 
 #@ # Read in a verilog file.
-#@ read_file -format verilog {cond_sum_adder_256.v}
+#@ read_file -format verilog {carry_lookahead_adder_128.v}
 #@ 
 #@ # Set the top-level module.
 #@ current_design $design_name
@@ -8644,41 +8644,41 @@ source -echo -verbose /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
 #@ # compile
 #@ compile -exact_map
 #@ 
-#@ # -- End source /net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
+#@ # -- End source /net/ugrads/jtschir1/pvt/ee434/lab1/carry_lookahead_adder_128.tcl
 
 report_timing
-report_area
-report_power
-set_max_delay 0.50 -from {in_*} -from {out_*}
-set_max_delay 0.50 -from {in_*} -to {out_*}
+set_max_delay 0.2 -from {in_*} -to {out_*}
 compile -exact_map
-report_area
-report_power
 report_timing
-set_max_delay 0.25 -from {in_*} -to {out_*}
+set_max_delay 0.3 -from {in_*} -to {out_*}
 compile -exact_map
-report_area
-report_power
 report_timing
-set_max_delay 0.125 -from {in_*} -to {out_*}
+set_max_delay 0.4 -from {in_*} -to {out_*}
 compile -exact_map
-report_area
-report_power
 report_timing
-set_max_delay 0.375 -from {in_*} -to {out_*}
-compile -exact_map
 report_area
 report_power
+set_max_delay 0.5 -from {in_*} -to {out_*}
+compile -exact_map
 report_timing
-set_max_delay 0.4375 -from {in_*} -to {out_*}
+set_max_delay 0.6 -from {in_*} -to {out_*}
 compile -exact_map
-report_area
-report_power
-report+timing
 report_timing
-out_S[170]
-set_max_delay 0.5625 -from {in_*} -to {out_*}
+set_max_delay 0.45 -from {in_*} -to {out_*}
 compile -exact_map
-report_area
-report_power
+report_timing
+set_max_delay 0.35 -from {in_*} -to {out_*}
+compile -exact_map
+report_timing
+set_max_delay 0.0 -from {in_*} -to {out_*}
+compile -exact_map
+report_timing
+set_max_delay 0.7 -from {in_*} -to {out_*}
+compile -exact_map
+report_timing
+set_max_delay 0.55 -from {in_*} -to {out_*}
+compile -exact_map
+report_timing
+set_max_delay 0.40 -from {in_*} -to {out_*}
+compile -exact_map
 report_timing

@@ -89,13 +89,12 @@
 /net/ic/tools/synopsys/syn/auxx/gui/common/histogram/DialogNetCapacitance.tcl
 /net/ic/tools/synopsys/syn/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
 /net/ic/tools/synopsys/syn/auxx/gui/common/schematic/DialogPathSchematicAddPaths.tcl
-/net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.tcl
+/net/ugrads/jtschir1/pvt/ee434/lab1/carry_lookahead_adder_128.tcl
 /net/ugrads/jtschir1/pvt/ee434/lab1/nangate.db
 /net/ic/tools/synopsys/syn/libraries/syn/gtech.db
 /net/ic/tools/synopsys/syn/libraries/syn/standard.sldb
-/net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.v
-/net/ugrads/jtschir1/pvt/ee434/lab1/cond_sum_adder_256.v
-/net/ugrads/jtschir1/pvt/ee434/lab1/nangate.db
+/net/ugrads/jtschir1/pvt/ee434/lab1/carry_lookahead_adder_128.v
+/net/ugrads/jtschir1/pvt/ee434/lab1/carry_lookahead_adder_128.v
 /net/ugrads/jtschir1/pvt/ee434/lab1/nangate.db
 /net/ugrads/jtschir1/pvt/ee434/lab1/nangate.db
 /net/ugrads/jtschir1/pvt/ee434/lab1/nangate.db
