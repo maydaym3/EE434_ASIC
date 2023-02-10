@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version T-2022.03-SP4 for linux64 -- Aug 24, 2022
-#@ # Date:   Mon Feb  6 14:44:34 2023
+#@ # Date:   Thu Feb  9 20:47:38 2023
 #@ # Run by: jtschir1@sig4.eecs.wsu.edu
 #@ 
 
@@ -8646,3 +8646,116 @@ source -echo -verbose /net/ugrads/jtschir1/pvt/ee434/lab2/mul.tcl
 #@ 
 #@ # -- End source /net/ugrads/jtschir1/pvt/ee434/lab2/mul.tcl
 
+report_timing
+report_area
+report_power
+report_timign
+report_timing
+create_clock -period 0.80 -name my_clk [get_ports clock_c]
+report_timing
+compile -exact_map
+report_timing
+report_area
+report_power
+report_timing
+create_clock -period 0.95 -name my_clk [get_ports clock_c]
+report_timing
+create_clock -period 0.99 -name my_clk [get_ports clock_c]
+report_timing
+report_area
+report_power
+create_clock -period 0.70 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.98 -name my_clk [get_ports clock_c]
+report_timing
+report_power
+create_clock -period 0.60 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_area
+report_power
+create_clock -period 0.94 -name my_clk [get_ports clock_c]
+report_timing
+report_power
+create_clock -period 0.50 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_power
+report_area
+create_clock -period 0.91 -name my_clk [get_ports clock_c]
+report_power
+create_clock -period 0.40 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.91 -name my_clk [get_ports clock_c]
+report_power
+create_clock -period 0.3 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.91 -name my_clk [get_ports clock_c]
+report_power
+create_clock -period 0.2 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.89 -name my_clk [get_ports clock_c]
+report_timing
+create_clock -period 0.88 -name my_clk [get_ports clock_c]
+report_timing
+report_power
+create_clock -period 0.10 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.96 -name my_clk [get_ports clock_c]
+report_timing
+report_power
+create_clock -period 0.0 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.90 -name my_clk [get_ports clock_c]
+report_power
+create_clock -period 0.15 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.88 -name my_clk [get_ports clock_c]
+report_timing
+report_power
+create_clock -period 0.175 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.90 -name my_clk [get_ports clock_c]
+report_timing
+report_power
+create_clock -period 0.25 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_aea
+report_area
+report_power
+create_clock -period 0.89 -name my_clk [get_ports clock_c]
+report_power
+create_clock -period 0.225 -name my_clk [get_ports clock_c]
+compile -exact_map
+report_timing
+report_area
+report_power
+create_clock -period 0.88 -name my_clk [get_ports clock_c]
+report_power
+write -format verilog -output KSA_64_Result.v -hierarchy
