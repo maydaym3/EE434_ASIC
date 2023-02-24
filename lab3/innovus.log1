@@ -1,0 +1,534 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Thu Feb 23 20:50:54 2023
+Host:		sig2.eecs.wsu.edu (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (3cores*6cpus*Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz 35840KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[20:50:54.383876] Configured Lic search path (21.01-s002): :27012@linlic1.vcea.wsu.edu::27012@linlic1.vcea.wsu.edu
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat myPMul32_4
+#% Begin load design ... (date=02/23 20:55:06, mem=804.8M)
+Loading design 'myPMul32_4' saved by 'Innovus' '21.15-s110_1' on 'Wed Feb 22 19:04:38 2023'.
+% Begin Load MMMC data ... (date=02/23 20:55:07, mem=806.6M)
+% End Load MMMC data ... (date=02/23 20:55:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=807.2M, current mem=807.2M)
+VRCCorner
+
+Loading LEF file /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/libs/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 280.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/viewDefinition.tcl
+Reading VTLib timing library '/net/ugrads/jtschir1/pvt/ee434/lab3/lib/lib/NangateOpenCellLibrary_typical.lib' ...
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.01min, real=0.02min, mem=18.0M, fe_cpu=0.62min, fe_real=4.23min, fe_mem=1066.2M) ***
+% Begin Load netlist data ... (date=02/23 20:55:08, mem=823.7M)
+*** Begin netlist parsing (mem=1066.2M) ***
+Created 134 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1078.219M, initial mem = 476.039M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1078.2M) ***
+% End Load netlist data ... (date=02/23 20:55:08, total cpu=0:00:00.1, real=0:00:00.0, peak res=831.4M, current mem=831.4M)
+Top level cell is myPMul32_4.
+Hooked 134 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell myPMul32_4 ...
+*** Netlist is unique.
+Set DBUPerIGU to techSite FreePDK45_38x28_10R_NP_162NW_34O width 380.
+** info: there are 135 modules.
+** info: there are 15045 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1130.145M, initial mem = 476.039M) ***
+*info: set bottom ioPad orient R0
+Start create_tracks
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Loading preference file /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/gui.pref.tcl ...
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+Change floorplan default-technical-site to 'FreePDK45_38x28_10R_NP_162NW_34O'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+Reading floorplan file - /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.fp.gz (mem = 1374.5M).
+% Begin Load floorplan data ... (date=02/23 20:55:12, mem=1111.0M)
+*info: reset 21147 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 544320 535360)
+Start create_tracks
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.fp.spr.gz (Created by Innovus v21.15-s110_1 on Wed Feb 22 19:04:36 2023, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+14 swires and 10 svias were compressed
+14 swires and 10 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1111.8M, current mem=1111.8M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=02/23 20:55:13, total cpu=0:00:00.1, real=0:00:01.0, peak res=1112.0M, current mem=1112.0M)
+Reading congestion map file /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=02/23 20:55:13, mem=1112.1M)
+% End Load SymbolTable ... (date=02/23 20:55:13, total cpu=0:00:00.1, real=0:00:00.0, peak res=1114.1M, current mem=1114.1M)
+Loading place ...
+% Begin Load placement data ... (date=02/23 20:55:13, mem=1114.1M)
+Reading placement file - /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Wed Feb 22 19:04:37 2023, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1378.5M) ***
+Total net length = 2.114e+01 (1.057e+01 1.057e+01) (ext = 2.570e-01)
+% End Load placement data ... (date=02/23 20:55:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1114.3M, current mem=1114.2M)
+% Begin Load routing data ... (date=02/23 20:55:13, mem=1114.2M)
+Reading routing file - /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Wed Feb 22 19:04:37 2023 Format: 20.1) ...
+*** Total 21145 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1375.5M) ***
+% End Load routing data ... (date=02/23 20:55:14, total cpu=0:00:00.1, real=0:00:01.0, peak res=1115.8M, current mem=1114.8M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/myPMul32_4.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1378.5M) ***
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/libs/mmmc/NangateOpenCellLibrary.cap ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: master_techFreePDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: VView1
+    RC-Corner Name        : VRCCorner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/libs/mmmc/NangateOpenCellLibrary.cap'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=02/23 20:55:14, mem=1122.8M)
+% End Load power constraints ... (date=02/23 20:55:14, total cpu=0:00:00.1, real=0:00:00.0, peak res=1122.8M, current mem=1122.8M)
+VDCCorner
+% Begin load AAE data ... (date=02/23 20:55:15, mem=1129.4M)
+% End load AAE data ... (date=02/23 20:55:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=1129.5M, current mem=1129.5M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+#% End load design ... (date=02/23 20:55:15, total cpu=0:00:03.4, real=0:00:09.0, peak res=1159.9M, current mem=1128.6M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+Un-suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename *
+<CMD> globalNetConnect VDD -type tiehi -pin VDD -instanceBasename *
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename *
+<CMD> globalNetConnect VSS -type tielo -pin VSS -instanceBasename *
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -maxRouteLayer 8 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+**WARN: (IMPSP-105):	'setPlaceMode -maxRouteLayer' will become obsolete from next release. Use 'setRouteMode -earlyGlobalMaxRouteLayer N' to set maximum routing layer.Type 'man IMPSP-105' for more detail.
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+**WARN: (IMPSP-9525):	setPlaceMode -maxRouteLayer will overwrite setTrialRouteMode -maxRouteLayer inside placeDesign.
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+*** placeDesign #1 [begin] : totSession cpu/real = 0:02:04.1/0:13:55.0 (0.1), mem = 1409.4M
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 1199 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:01.3) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Set Default Input Pin Transition as 1 ps.
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.7486 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=1544.55 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: myPMul32_4
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=1547.56)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 20079
+End delay calculation. (MEM=1698.16 CPU=0:00:03.5 REAL=0:00:04.0)
+End delay calculation (fullDC). (MEM=1661.54 CPU=0:00:04.0 REAL=0:00:05.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Input Pin Transition as 0.1 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#6 (mem=1652.0M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.4 mem=1660.0M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.5 mem=1660.0M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 18353 (92.5%) nets
+3		: 722 (3.6%) nets
+4     -	14	: 506 (2.6%) nets
+15    -	39	: 133 (0.7%) nets
+40    -	79	: 128 (0.6%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 1 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=13852 (0 fixed + 13852 movable) #buf cell=0 #inv cell=181 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=19843 #term=53831 #term/net=2.71, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=257
+stdCell: 13852 single + 0 double + 0 multi
+Total standard cell length = 23.4122 (mm), area = 0.0328 (mm^2)
+Estimated cell power/ground rail width = 0.197 um
+Average module density = 0.486.
+Density for the design = 0.486.
+       = stdcell_area 123222 sites (32777 um^2) / alloc_area 253736 sites (67494 um^2).
+Pin Density = 0.2122.
+            = total # of pins 53831 / total area 253736.
+=== lastAutoLevel = 9 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 2.415e-09 (1.01e-09 1.40e-09)
+              Est.  stn bbox = 2.567e-09 (1.09e-09 1.48e-09)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 1689.7M
+Iteration  2: Total net bbox = 2.415e-09 (1.01e-09 1.40e-09)
+              Est.  stn bbox = 2.567e-09 (1.09e-09 1.48e-09)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1689.7M
+Iteration  3: Total net bbox = 4.214e+02 (2.19e+02 2.03e+02)
+              Est.  stn bbox = 5.416e+02 (2.84e+02 2.57e+02)
+              cpu = 0:00:00.5 real = 0:00:00.0 mem = 1718.4M
+Active setup views:
+    VView1
+Iteration  4: Total net bbox = 8.829e+04 (4.63e+04 4.20e+04)
+              Est.  stn bbox = 1.261e+05 (6.71e+04 5.89e+04)
+              cpu = 0:00:03.4 real = 0:00:03.0 mem = 1718.4M
+Iteration  5: Total net bbox = 1.022e+05 (6.00e+04 4.21e+04)
+              Est.  stn bbox = 1.484e+05 (8.64e+04 6.19e+04)
+              cpu = 0:00:03.4 real = 0:00:04.0 mem = 1718.4M
+Iteration  6: Total net bbox = 1.028e+05 (5.67e+04 4.61e+04)
+              Est.  stn bbox = 1.525e+05 (8.13e+04 7.11e+04)
+              cpu = 0:00:04.4 real = 0:00:04.0 mem = 1722.7M
+Iteration  7: Total net bbox = 1.136e+05 (6.05e+04 5.31e+04)
+              Est.  stn bbox = 1.631e+05 (8.50e+04 7.81e+04)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 1743.0M
+Iteration  8: Total net bbox = 1.191e+05 (6.46e+04 5.46e+04)
+              Est.  stn bbox = 1.687e+05 (8.91e+04 7.96e+04)
+              cpu = 0:00:07.2 real = 0:00:07.0 mem = 1743.0M
+Iteration  9: Total net bbox = 1.116e+05 (5.84e+04 5.32e+04)
+              Est.  stn bbox = 1.629e+05 (8.24e+04 8.05e+04)
+              cpu = 0:00:03.0 real = 0:00:03.0 mem = 1743.0M
+Iteration 10: Total net bbox = 1.139e+05 (6.02e+04 5.37e+04)
+              Est.  stn bbox = 1.652e+05 (8.42e+04 8.10e+04)
+              cpu = 0:00:07.1 real = 0:00:07.0 mem = 1743.0M
+Iteration 11: Total net bbox = 1.122e+05 (5.88e+04 5.33e+04)
+              Est.  stn bbox = 1.637e+05 (8.29e+04 8.08e+04)
+              cpu = 0:00:01.7 real = 0:00:02.0 mem = 1743.0M
+Iteration 12: Total net bbox = 1.154e+05 (6.12e+04 5.42e+04)
+              Est.  stn bbox = 1.670e+05 (8.53e+04 8.17e+04)
+              cpu = 0:00:07.2 real = 0:00:07.0 mem = 1743.0M
+Iteration 13: Total net bbox = 1.229e+05 (6.32e+04 5.97e+04)
+              Est.  stn bbox = 1.744e+05 (8.72e+04 8.72e+04)
+              cpu = 0:00:07.5 real = 0:00:07.0 mem = 1743.0M
+Iteration 14: Total net bbox = 1.229e+05 (6.32e+04 5.97e+04)
+              Est.  stn bbox = 1.744e+05 (8.72e+04 8.72e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1743.0M
+*** cost = 1.229e+05 (6.32e+04 5.97e+04) (cpu for global=0:00:46.9) real=0:00:48.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/7
+Solver runtime cpu: 0:00:22.0 real: 0:00:21.9
+Core Placement runtime cpu: 0:00:23.8 real: 0:00:24.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:03:03 mem=1743.0M) ***
+Total net bbox length = 1.232e+05 (6.351e+04 5.971e+04) (ext = 3.919e+03)
+Move report: Detail placement moves 13852 insts, mean move: 0.47 um, max move: 47.34 um 
+	Max move on inst (U15916): (131.83, 178.92) --> (168.25, 189.84)
+	Runtime: CPU: 0:00:02.4 REAL: 0:00:02.0 MEM: 1767.0MB
+Summary Report:
+Instances move: 13852 (out of 13852 movable)
+Instances flipped: 0
+Mean displacement: 0.47 um
+Max displacement: 47.34 um (Instance: U15916) (131.829, 178.923) -> (168.25, 189.84)
+	Length: 3 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: NAND2_X1
+Total net bbox length = 1.194e+05 (5.910e+04 6.029e+04) (ext = 3.794e+03)
+Runtime: CPU: 0:00:02.4 REAL: 0:00:02.0 MEM: 1767.0MB
+*** Finished refinePlace (0:03:05 mem=1767.0M) ***
+*** End of Placement (cpu=0:00:52.9, real=0:00:54.0, mem=1717.0M) ***
+default core: bins with density > 0.750 =  0.28 % ( 1 / 361 )
+Density distribution unevenness ratio = 18.403%
+*** Free Virtual Timing Model ...(mem=1717.0M)
+Starting IO pin assignment...
+The design is not routed. Using placement based method for pin assignment.
+Completed IO pin assignment.
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.7486 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: myPMul32_4
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=1708.53)
+Total number of fetched objects 20079
+End delay calculation. (MEM=1751.74 CPU=0:00:03.4 REAL=0:00:03.0)
+End delay calculation (fullDC). (MEM=1751.74 CPU=0:00:03.8 REAL=0:00:03.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] metal1 has single uniform track structure
+[NR-eGR] metal2 has single uniform track structure
+[NR-eGR] metal3 has single uniform track structure
+[NR-eGR] metal4 has single uniform track structure
+[NR-eGR] metal5 has single uniform track structure
+[NR-eGR] metal6 has single uniform track structure
+[NR-eGR] metal7 has single uniform track structure
+[NR-eGR] metal8 has single uniform track structure
+[NR-eGR] metal9 has single uniform track structure
+[NR-eGR] metal10 has single uniform track structure
+[NR-eGR] Read 382 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 382
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 19843 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 19843
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 19843 net(s) in layer range [2, 8]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.275218e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.28 seconds, mem = 1750.2M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                  Length (um)    Vias 
+[NR-eGR] -------------------------------------
+[NR-eGR]  metal1   (1H)             0   53574 
+[NR-eGR]  metal2   (2V)         68858   72454 
+[NR-eGR]  metal3   (3H)         65118     164 
+[NR-eGR]  metal4   (4V)           198       9 
+[NR-eGR]  metal5   (5H)            60       2 
+[NR-eGR]  metal6   (6V)             0       2 
+[NR-eGR]  metal7   (7H)             0       0 
+[NR-eGR]  metal8   (8V)             0       0 
+[NR-eGR]  metal9   (9H)             0       0 
+[NR-eGR]  metal10  (10V)            0       0 
+[NR-eGR] -------------------------------------
+[NR-eGR]           Total       134234  126205 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 119233um
+[NR-eGR] Total length: 134234um, number of vias: 126205
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 1525um, number of vias: 937
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.37 seconds, mem = 1716.2M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.6, real=0:00:01.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 1: 7, real = 0: 1:11, mem = 1706.2M **
+Tdgp not successfully inited but do clear! skip clearing
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+**WARN: (IMPSP-9526):	Restoring setTrialRouteMode -maxRouteLayer after placeDesign. Use 'setTrialRouteMode -maxRoutingLayer N' to set maximum routing layer.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9525           1  setPlaceMode -maxRouteLayer will overwri...
+WARNING   IMPSP-9526           1  Restoring setTrialRouteMode -maxRouteLay...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+WARNING   IMPPSP-1003          2  Found use of '%s'. This will continue to...
+*** Message Summary: 8 warning(s), 0 error(s)
+
+*** placeDesign #1 [finish] : cpu/real = 0:01:07.2/0:01:10.4 (1.0), totSession cpu/real = 0:03:11.3/0:15:05.3 (0.2), mem = 1706.2M
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setDrawView place
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> saveDesign lab3_03_pl.enc
+#% Begin save design ... (date=02/23 21:08:18, mem=1363.5M)
+% Begin Save ccopt configuration ... (date=02/23 21:08:18, mem=1363.5M)
+% End Save ccopt configuration ... (date=02/23 21:08:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=1364.4M, current mem=1364.4M)
+% Begin Save netlist data ... (date=02/23 21:08:18, mem=1364.4M)
+Writing Binary DB to lab3_03_pl.enc.dat/myPMul32_4.v.bin in single-threaded mode...
+% End Save netlist data ... (date=02/23 21:08:18, total cpu=0:00:00.1, real=0:00:00.0, peak res=1364.5M, current mem=1364.5M)
+Saving symbol-table file ...
+Saving congestion map file lab3_03_pl.enc.dat/myPMul32_4.route.congmap.gz ...
+% Begin Save AAE data ... (date=02/23 21:08:19, mem=1365.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=02/23 21:08:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=1365.1M, current mem=1365.1M)
+Saving preference file lab3_03_pl.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=02/23 21:08:20, mem=1366.2M)
+Saving floorplan file ...
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=02/23 21:08:20, total cpu=0:00:00.1, real=0:00:00.0, peak res=1366.5M, current mem=1366.5M)
+Saving PG file lab3_03_pl.enc.dat/myPMul32_4.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Thu Feb 23 21:08:20 2023)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1749.9M) ***
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=02/23 21:08:20, mem=1366.8M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=02/23 21:08:21, total cpu=0:00:00.1, real=0:00:01.0, peak res=1366.9M, current mem=1366.9M)
+% Begin Save routing data ... (date=02/23 21:08:21, mem=1366.9M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.2 real=0:00:00.0 mem=1749.9M) ***
+% End Save routing data ... (date=02/23 21:08:21, total cpu=0:00:00.2, real=0:00:00.0, peak res=1367.1M, current mem=1367.1M)
+Saving property file lab3_03_pl.enc.dat/myPMul32_4.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1752.9M) ***
+% Begin Save power constraints data ... (date=02/23 21:08:21, mem=1367.5M)
+% End Save power constraints data ... (date=02/23 21:08:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=1367.6M, current mem=1367.6M)
+VRCCorner
+Generated self-contained design lab3_03_pl.enc.dat
+#% End save design ... (date=02/23 21:08:22, total cpu=0:00:01.2, real=0:00:04.0, peak res=1369.8M, current mem=1369.8M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> zoomBox 123.10200 166.60350 131.61200 158.51900
+<CMD> fit

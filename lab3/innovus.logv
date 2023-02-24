@@ -1,0 +1,497 @@
+[02/22 17:41:23      0s] 
+[02/22 17:41:23      0s] Cadence Innovus(TM) Implementation System.
+[02/22 17:41:23      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/22 17:41:23      0s] 
+[02/22 17:41:23      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[02/22 17:41:23      0s] Options:	
+[02/22 17:41:23      0s] Date:		Wed Feb 22 17:41:23 2023
+[02/22 17:41:23      0s] Host:		sig2.eecs.wsu.edu (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (3cores*6cpus*Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz 35840KB)
+[02/22 17:41:23      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[02/22 17:41:23      0s] 
+[02/22 17:41:23      0s] License:
+[02/22 17:41:24      0s] 		[17:41:24.383900] Configured Lic search path (21.01-s002): :27012@linlic1.vcea.wsu.edu::27012@linlic1.vcea.wsu.edu
+
+[02/22 17:41:24      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[02/22 17:41:24      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[02/22 17:42:33     20s] Reset Parastics called with the command setExtractRCMode -reset**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+[02/22 17:42:43     26s] @(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[02/22 17:42:43     26s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[02/22 17:42:43     26s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[02/22 17:42:43     26s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[02/22 17:42:43     26s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[02/22 17:42:43     26s] @(#)CDS: CPE v21.15-s076
+[02/22 17:42:43     26s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[02/22 17:42:43     26s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[02/22 17:42:43     26s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[02/22 17:42:43     26s] @(#)CDS: RCDB 11.15.0
+[02/22 17:42:43     26s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[02/22 17:42:43     26s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[02/22 17:42:43     26s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_5581_sig2.eecs.wsu.edu_jtschir1_Yd5Sb3.
+
+[02/22 17:42:43     26s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[02/22 17:42:57     29s] 
+[02/22 17:42:57     29s] **INFO:  MMMC transition support version v31-84 
+[02/22 17:42:57     29s] 
+[02/22 17:42:57     29s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[02/22 17:42:57     29s] <CMD> suppressMessage ENCEXT-2799
+[02/22 17:42:57     29s] <CMD> win
+[02/22 17:47:46     62s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[02/22 17:47:46     62s] <CMD> set conf_qxconf_file NULL
+[02/22 17:47:46     62s] <CMD> set conf_qxlib_file NULL
+[02/22 17:47:46     62s] <CMD> set defHierChar /
+[02/22 17:47:46     62s] <CMD> set init_design_settop 0
+[02/22 17:47:46     62s] <CMD> set init_pwr_net VDD
+[02/22 17:47:46     62s] <CMD> set init_gnd_net VSS
+[02/22 17:47:46     62s] <CMD> set init_lef_file lib/lef/NangateOpenCellLibrary.lef
+[02/22 17:47:46     62s] <CMD> set init_mmmc_file pmul32_4_fm.view
+[02/22 17:47:46     62s] <CMD> set init_verilog pmul32_4_fm.v
+[02/22 17:47:46     62s] <CMD> set pegDefaultResScaleFactor 1.000000
+[02/22 17:47:46     62s] <CMD> set pegDetailResScaleFactor 1.000000
+[02/22 17:53:04    112s] <CMD> init_design
+[02/22 17:53:04    112s] #% Begin Load MMMC data ... (date=02/22 17:53:04, mem=811.1M)
+[02/22 17:53:04    112s] **ERROR: (TCLCMD-995):	Can not open file 'lib/cap/NangateOpenCellLibrary.cap' for RC corner
+<CMD> init_design
+[02/22 17:54:54    129s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 17:54:54    129s] % Begin Load MMMC data ... (date=02/22 17:54:54, mem=811.2M)
+[02/22 17:54:54    129s] **ERROR: (TCLCMD-995):	Can not open file 'lib/cap/NangateOpenCellLibrary.cap' for RC corner
+<CMD> init_design
+[02/22 17:57:26    153s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 17:57:26    153s] % Begin Load MMMC data ... (date=02/22 17:57:26, mem=811.2M)
+[02/22 17:57:26    153s] **ERROR: (TCLCMD-995):	Can not open file 'lib/cap/NangateOpenCellLibrary.cap' for RC corner
+<CMD> init_design
+[02/22 17:58:03    159s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 17:58:03    159s] % Begin Load MMMC data ... (date=02/22 17:58:03, mem=811.2M)
+[02/22 17:58:03    159s] **ERROR: (TCLCMD-995):	Can not open file 'lib/cap/NangateOpenCellLibrary.cap' for RC corner
+<CMD> init_design
+[02/22 17:58:04    160s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 17:58:04    160s] % Begin Load MMMC data ... (date=02/22 17:58:04, mem=811.2M)
+[02/22 17:58:04    160s] **ERROR: (TCLCMD-995):	Can not open file 'lib/cap/NangateOpenCellLibrary.cap' for RC corner
+<CMD> init_design
+[02/22 18:00:02    178s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 18:00:02    178s] % Begin Load MMMC data ... (date=02/22 18:00:02, mem=811.2M)
+[02/22 18:00:02    178s] **ERROR: (TCLCMD-995):	Can not open file 'lib/lib/NangateOpenCellLibrary_typical.lib' for library set
+<CMD> init_design
+[02/22 18:03:51    214s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 18:03:51    214s] % Begin Load MMMC data ... (date=02/22 18:03:51, mem=811.2M)
+[02/22 18:03:51    214s] Extraction setup Started 
+[02/22 18:03:51    214s] 
+[02/22 18:03:51    214s] Trim Metal Layers:
+[02/22 18:03:51    214s] 
+[02/22 18:03:51    214s] Trim Metal Layers:
+[02/22 18:03:51    214s] 
+[02/22 18:03:51    214s] Trim Metal Layers:
+[02/22 18:03:51    214s] % End Load MMMC data ... (date=02/22 18:03:51, total cpu=0:00:00.1, real=0:00:00.0, peak res=813.5M, current mem=813.5M)
+[02/22 18:03:51    214s] 
+[02/22 18:03:51    214s] Loading LEF file lib/lef/NangateOpenCellLibrary.lef ...
+[02/22 18:03:51    214s] Set DBUPerIGU to M2 pitch 280.
+[02/22 18:03:52    215s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[02/22 18:03:52    215s] Loading view definition file from pmul32_4_fm.view
+[02/22 18:03:52    215s] Reading VTLib timing library '/net/ugrads/jtschir1/pvt/ee434/lab3/lib/lib/NangateOpenCellLibrary_typical.lib' ...
+[02/22 18:03:53    215s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[02/22 18:03:53    215s] Ending "PreSetAnalysisView" (total cpu=0:00:00.5, real=0:00:01.0, peak res=874.1M, current mem=822.7M)
+[02/22 18:03:53    215s] *** End library_loading (cpu=0.01min, real=0.02min, mem=10.0M, fe_cpu=3.59min, fe_real=22.50min, fe_mem=1065.2M) ***
+[02/22 18:03:53    215s] % Begin Load netlist data ... (date=02/22 18:03:53, mem=821.8M)
+[02/22 18:03:53    215s] *** Begin netlist parsing (mem=1065.2M) ***
+[02/22 18:03:53    215s] Created 134 new cells from 1 timing libraries.
+[02/22 18:03:53    215s] Reading netlist ...
+[02/22 18:03:53    215s] Backslashed names will retain backslash and a trailing blank character.
+[02/22 18:03:53    215s] Reading verilog netlist 'pmul32_4_fm.v'
+[02/22 18:03:53    215s] 
+[02/22 18:03:53    215s] *** Memory Usage v#1 (Current mem = 1068.156M, initial mem = 476.039M) ***
+[02/22 18:03:53    215s] *** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=1068.2M) ***
+[02/22 18:03:53    215s] % End Load netlist data ... (date=02/22 18:03:53, total cpu=0:00:00.2, real=0:00:00.0, peak res=831.9M, current mem=831.9M)
+[02/22 18:03:53    215s] Top level cell is myPMul32_4.
+[02/22 18:03:55    215s] Hooked 134 DB cells to tlib cells.
+[02/22 18:03:55    215s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=835.3M, current mem=835.3M)
+[02/22 18:03:55    215s] Starting recursive module instantiation check.
+[02/22 18:03:55    215s] No recursion found.
+[02/22 18:03:55    215s] Building hierarchical netlist for Cell myPMul32_4 ...
+[02/22 18:03:55    215s] *** Netlist is unique.
+[02/22 18:03:55    215s] Set DBUPerIGU to techSite FreePDK45_38x28_10R_NP_162NW_34O width 380.
+[02/22 18:03:55    215s] Setting Std. cell height to 2800 DBU (smallest netlist inst).
+[02/22 18:03:55    215s] ** info: there are 135 modules.
+[02/22 18:03:55    215s] ** info: there are 15045 stdCell insts.
+[02/22 18:03:55    216s] 
+[02/22 18:03:55    216s] *** Memory Usage v#1 (Current mem = 1125.082M, initial mem = 476.039M) ***
+[02/22 18:03:55    216s] Start create_tracks
+[02/22 18:03:55    216s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[02/22 18:03:55    216s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[02/22 18:03:55    216s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[02/22 18:03:56    216s] Extraction setup Started 
+[02/22 18:03:56    216s] 
+[02/22 18:03:56    216s] Trim Metal Layers:
+[02/22 18:03:56    216s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[02/22 18:03:56    216s] Reading Capacitance Table File lib/cap/NangateOpenCellLibrary.cap ...
+[02/22 18:03:56    216s] Cap table was created using Encounter 08.10-p004_1.
+[02/22 18:03:56    216s] Process name: master_techFreePDK45.
+[02/22 18:03:56    216s] Importing multi-corner RC tables ... 
+[02/22 18:03:56    216s] Summary of Active RC-Corners : 
+[02/22 18:03:56    216s]  
+[02/22 18:03:56    216s]  Analysis View: VView1
+[02/22 18:03:56    216s]     RC-Corner Name        : VRCCorner
+[02/22 18:03:56    216s]     RC-Corner Index       : 0
+[02/22 18:03:56    216s]     RC-Corner Temperature : 25 Celsius
+[02/22 18:03:56    216s]     RC-Corner Cap Table   : 'lib/cap/NangateOpenCellLibrary.cap'
+[02/22 18:03:56    216s]     RC-Corner PreRoute Res Factor         : 1
+[02/22 18:03:56    216s]     RC-Corner PreRoute Cap Factor         : 1
+[02/22 18:03:56    216s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[02/22 18:03:56    216s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[02/22 18:03:56    216s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[02/22 18:03:56    216s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[02/22 18:03:56    216s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[02/22 18:03:56    216s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[02/22 18:03:56    216s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[02/22 18:03:56    216s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[02/22 18:03:56    216s] 
+[02/22 18:03:56    216s] Trim Metal Layers:
+[02/22 18:03:56    216s] LayerId::1 widthSet size::4
+[02/22 18:03:56    216s] LayerId::2 widthSet size::4
+[02/22 18:03:56    216s] LayerId::3 widthSet size::4
+[02/22 18:03:56    216s] LayerId::4 widthSet size::4
+[02/22 18:03:56    216s] LayerId::5 widthSet size::4
+[02/22 18:03:56    216s] LayerId::6 widthSet size::4
+[02/22 18:03:56    216s] LayerId::7 widthSet size::4
+[02/22 18:03:56    216s] LayerId::8 widthSet size::4
+[02/22 18:03:56    216s] LayerId::9 widthSet size::4
+[02/22 18:03:56    216s] LayerId::10 widthSet size::3
+[02/22 18:03:56    216s] Updating RC grid for preRoute extraction ...
+[02/22 18:03:56    216s] eee: pegSigSF::1.070000
+[02/22 18:03:56    216s] Initializing multi-corner capacitance tables ... 
+[02/22 18:03:56    216s] Initializing multi-corner resistance tables ...
+[02/22 18:03:56    216s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] eee: l::10 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/22 18:03:56    216s] {RT VRCCorner 0 10 10 {4 1} {7 0} {9 0} 3}
+[02/22 18:03:56    216s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 wcR=0.500500 newSi=0.000000 wHLS=1.251250 siPrev=0 viaL=0.000000
+[02/22 18:03:56    216s] *Info: initialize multi-corner CTS.
+[02/22 18:03:56    216s] Ending "SetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1101.2M, current mem=869.5M)
+[02/22 18:03:56    216s] Reading timing constraints file 'pmul32_4_fm.sdc' ...
+[02/22 18:03:56    216s] Current (total cpu=0:03:37, real=0:22:33, peak res=1109.4M, current mem=1109.4M)
+[02/22 18:03:56    216s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File pmul32_4_fm.sdc, Line 8).
+[02/22 18:03:56    216s] 
+[02/22 18:03:57    216s] INFO (CTE): Reading of timing constraints file pmul32_4_fm.sdc completed, with 1 WARNING
+[02/22 18:03:57    216s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=1116.7M, current mem=1116.7M)
+[02/22 18:03:57    216s] Current (total cpu=0:03:37, real=0:22:34, peak res=1116.7M, current mem=1116.7M)
+[02/22 18:03:57    216s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[02/22 18:03:57    216s] Summary for sequential cells identification: 
+[02/22 18:03:57    216s]   Identified SBFF number: 16
+[02/22 18:03:57    216s]   Identified MBFF number: 0
+[02/22 18:03:57    216s]   Identified SB Latch number: 0
+[02/22 18:03:57    216s]   Identified MB Latch number: 0
+[02/22 18:03:57    216s]   Not identified SBFF number: 0
+[02/22 18:03:57    216s]   Not identified MBFF number: 0
+[02/22 18:03:57    216s]   Not identified SB Latch number: 0
+[02/22 18:03:57    216s]   Not identified MB Latch number: 0
+[02/22 18:03:57    216s]   Number of sequential cells which are not FFs: 13
+[02/22 18:03:57    216s] Total number of combinational cells: 99
+[02/22 18:03:57    216s] Total number of sequential cells: 29
+[02/22 18:03:57    216s] Total number of tristate cells: 6
+[02/22 18:03:57    216s] Total number of level shifter cells: 0
+[02/22 18:03:57    216s] Total number of power gating cells: 0
+[02/22 18:03:57    216s] Total number of isolation cells: 0
+[02/22 18:03:57    216s] Total number of power switch cells: 0
+[02/22 18:03:57    216s] Total number of pulse generator cells: 0
+[02/22 18:03:57    216s] Total number of always on buffers: 0
+[02/22 18:03:57    216s] Total number of retention cells: 0
+[02/22 18:03:57    216s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[02/22 18:03:57    216s] Total number of usable buffers: 9
+[02/22 18:03:57    216s] List of unusable buffers:
+[02/22 18:03:57    216s] Total number of unusable buffers: 0
+[02/22 18:03:57    216s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[02/22 18:03:57    216s] Total number of usable inverters: 6
+[02/22 18:03:57    216s] List of unusable inverters:
+[02/22 18:03:57    216s] Total number of unusable inverters: 0
+[02/22 18:03:57    216s] List of identified usable delay cells:
+[02/22 18:03:57    216s] Total number of identified usable delay cells: 0
+[02/22 18:03:57    216s] List of identified unusable delay cells:
+[02/22 18:03:57    216s] Total number of identified unusable delay cells: 0
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[02/22 18:03:57    216s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Deleting Cell Server Begin ...
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Deleting Cell Server End ...
+[02/22 18:03:57    216s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1146.1M, current mem=1146.1M)
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[02/22 18:03:57    216s] Summary for sequential cells identification: 
+[02/22 18:03:57    216s]   Identified SBFF number: 16
+[02/22 18:03:57    216s]   Identified MBFF number: 0
+[02/22 18:03:57    216s]   Identified SB Latch number: 0
+[02/22 18:03:57    216s]   Identified MB Latch number: 0
+[02/22 18:03:57    216s]   Not identified SBFF number: 0
+[02/22 18:03:57    216s]   Not identified MBFF number: 0
+[02/22 18:03:57    216s]   Not identified SB Latch number: 0
+[02/22 18:03:57    216s]   Not identified MB Latch number: 0
+[02/22 18:03:57    216s]   Number of sequential cells which are not FFs: 13
+[02/22 18:03:57    216s]  Visiting view : VView1
+[02/22 18:03:57    216s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[02/22 18:03:57    216s]    : PowerDomain = none : Weighted F : unweighted  = 9.50 (1.000) with rcCorner = -1
+[02/22 18:03:57    216s]  Visiting view : VView1
+[02/22 18:03:57    216s]    : PowerDomain = none : Weighted F : unweighted  = 10.10 (1.000) with rcCorner = 0
+[02/22 18:03:57    216s]    : PowerDomain = none : Weighted F : unweighted  = 9.50 (1.000) with rcCorner = -1
+[02/22 18:03:57    216s] TLC MultiMap info (StdDelay):
+[02/22 18:03:57    216s]   : VDCCorner + VTLib + 1 + no RcCorner := 9.5ps
+[02/22 18:03:57    216s]   : VDCCorner + VTLib + 1 + VRCCorner := 10.1ps
+[02/22 18:03:57    216s]  Setting StdDelay to: 10.1ps
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Deleting Cell Server Begin ...
+[02/22 18:03:57    216s] 
+[02/22 18:03:57    216s] TimeStamp Deleting Cell Server End ...
+[02/22 18:03:57    216s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 18:04:54    220s] <CMD> getIoFlowFlag
+[02/22 18:06:18    230s] <CMD> setIoFlowFlag 0
+[02/22 18:06:18    230s] <CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.989466530751 0.5 5 5 5 5
+[02/22 18:06:18    230s] Start create_tracks
+[02/22 18:06:18    230s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[02/22 18:06:18    230s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[02/22 18:06:18    230s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[02/22 18:06:18    230s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[02/22 18:06:18    230s] <CMD> uiSetTool select
+[02/22 18:06:18    230s] <CMD> getIoFlowFlag
+[02/22 18:06:18    230s] <CMD> fit
+[02/22 18:31:19    464s] <CMD> getIoFlowFlag
+[02/22 18:34:17    488s] ambiguous command name "save": saveBlackBox saveColorPreference saveDesign saveDrc saveExcludeNet saveFPlan saveHInstColor saveIoFile saveModel saveNetlist saveOaBlackboxes savePartition savePowerSwitch savePtnPin saveRC saveRouteGuide saveSignalStormConstraint saveSpecialRoute saveTimingBudget saveTwf saveWhatIfConstraints saveWhatIfTimingAssertions saveWhatIfTimingModel saveWorkspace save_abstract save_ccopt_config save_global save_path_categories
+[02/22 18:34:56    494s] <CMD> saveDesign lab3_01_floorplan.enc
+[02/22 18:34:56    494s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 18:34:56    494s] % Begin save design ... (date=02/22 18:34:56, mem=1185.8M)
+[02/22 18:34:56    494s] % Begin Save ccopt configuration ... (date=02/22 18:34:56, mem=1185.8M)
+[02/22 18:34:56    494s] % End Save ccopt configuration ... (date=02/22 18:34:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1186.6M, current mem=1186.6M)
+[02/22 18:34:56    494s] % Begin Save netlist data ... (date=02/22 18:34:56, mem=1186.6M)
+[02/22 18:34:56    494s] Writing Binary DB to lab3_01_floorplan.enc.dat/myPMul32_4.v.bin in single-threaded mode...
+[02/22 18:34:56    494s] % End Save netlist data ... (date=02/22 18:34:56, total cpu=0:00:00.1, real=0:00:00.0, peak res=1191.0M, current mem=1186.7M)
+[02/22 18:34:56    494s] Saving symbol-table file ...
+[02/22 18:34:57    494s] Saving congestion map file lab3_01_floorplan.enc.dat/myPMul32_4.route.congmap.gz ...
+[02/22 18:34:57    494s] % Begin Save AAE data ... (date=02/22 18:34:57, mem=1186.8M)
+[02/22 18:34:57    494s] Saving AAE Data ...
+[02/22 18:34:57    494s] % End Save AAE data ... (date=02/22 18:34:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1186.8M, current mem=1186.8M)
+[02/22 18:34:57    494s] Saving preference file lab3_01_floorplan.enc.dat/gui.pref.tcl ...
+[02/22 18:34:57    494s] Saving mode setting ...
+[02/22 18:34:57    494s] Saving global file ...
+[02/22 18:34:58    494s] % Begin Save floorplan data ... (date=02/22 18:34:58, mem=1188.7M)
+[02/22 18:34:58    494s] Saving floorplan file ...
+[02/22 18:34:58    494s] % End Save floorplan data ... (date=02/22 18:34:58, total cpu=0:00:00.1, real=0:00:00.0, peak res=1188.7M, current mem=1188.7M)
+[02/22 18:34:58    494s] Saving Drc markers ...
+[02/22 18:34:58    494s] ... No Drc file written since there is no markers found.
+[02/22 18:34:58    494s] % Begin Save placement data ... (date=02/22 18:34:58, mem=1188.8M)
+[02/22 18:34:58    494s] ** Saving stdCellPlacement_binary (version# 2) ...
+[02/22 18:34:58    494s] Save Adaptive View Pruning View Names to Binary file
+[02/22 18:34:58    494s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1458.4M) ***
+[02/22 18:34:58    495s] % End Save placement data ... (date=02/22 18:34:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1188.9M, current mem=1188.9M)
+[02/22 18:34:58    495s] % Begin Save routing data ... (date=02/22 18:34:58, mem=1188.9M)
+[02/22 18:34:58    495s] Saving route file ...
+[02/22 18:34:59    495s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1455.4M) ***
+[02/22 18:34:59    495s] % End Save routing data ... (date=02/22 18:34:59, total cpu=0:00:00.1, real=0:00:01.0, peak res=1189.0M, current mem=1189.0M)
+[02/22 18:34:59    495s] Saving property file lab3_01_floorplan.enc.dat/myPMul32_4.prop
+[02/22 18:34:59    495s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1458.4M) ***
+[02/22 18:34:59    495s] % Begin Save power constraints data ... (date=02/22 18:34:59, mem=1189.5M)
+[02/22 18:34:59    495s] % End Save power constraints data ... (date=02/22 18:34:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=1189.6M, current mem=1189.6M)
+[02/22 18:34:59    495s] Generated self-contained design lab3_01_floorplan.enc.dat
+[02/22 18:35:00    495s] % End save design ... (date=02/22 18:34:59, total cpu=0:00:00.9, real=0:00:04.0, peak res=1219.5M, current mem=1189.8M)
+[02/22 18:35:00    495s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingOffset 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingThreshold 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingJogDistance 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingLayers {}
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingOffset 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingThreshold 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingJogDistance 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingLayers {}
+[02/22 18:48:10    613s] <CMD> set sprCreateIeStripeWidth 10.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeStripeThreshold 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeStripeWidth 10.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeStripeThreshold 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingOffset 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingThreshold 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingJogDistance 1.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeRingLayers {}
+[02/22 18:48:10    613s] <CMD> set sprCreateIeStripeWidth 10.0
+[02/22 18:48:10    613s] <CMD> set sprCreateIeStripeThreshold 1.0
+[02/22 18:49:45    625s] 
+[02/22 18:49:45    625s] viaInitial starts at Wed Feb 22 18:49:45 2023
+viaInitial ends at Wed Feb 22 18:49:45 2023
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[02/22 18:49:53    627s] The ring targets are set to core/block ring wires.
+[02/22 18:49:53    627s] addRing command will consider rows while creating rings.
+[02/22 18:49:53    627s] addRing command will disallow rings to go over rows.
+[02/22 18:49:53    627s] addRing command will ignore shorts while creating rings.
+[02/22 18:49:53    627s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 1 bottom 1 left 1 right 1} -spacing {top 1 bottom 1 left 1 right 1} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[02/22 18:49:53    627s] 
+[02/22 18:49:53    627s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1500.8M)
+[02/22 18:49:53    627s] Ring generation is complete.
+[02/22 18:49:53    627s] vias are now being generated.
+[02/22 18:49:54    627s] addRing created 8 wires.
+[02/22 18:49:54    627s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[02/22 18:49:54    627s] +--------+----------------+----------------+
+[02/22 18:49:54    627s] |  Layer |     Created    |     Deleted    |
+[02/22 18:49:54    627s] +--------+----------------+----------------+
+[02/22 18:49:54    627s] | metal1 |        4       |       NA       |
+[02/22 18:49:54    627s] |  via1  |        8       |        0       |
+[02/22 18:49:54    627s] | metal2 |        4       |       NA       |
+[02/22 18:49:54    627s] +--------+----------------+----------------+
+[02/22 18:50:17    630s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[02/22 18:50:17    630s] The ring targets are set to core/block ring wires.
+[02/22 18:50:17    630s] addRing command will consider rows while creating rings.
+[02/22 18:50:17    630s] addRing command will disallow rings to go over rows.
+[02/22 18:50:17    630s] addRing command will ignore shorts while creating rings.
+[02/22 18:50:17    630s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top metal1 bottom metal1 left metal2 right metal2} -width {top 1 bottom 1 left 1 right 1} -spacing {top 1 bottom 1 left 1 right 1} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[02/22 18:50:17    630s] 
+[02/22 18:50:17    630s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1500.8M)
+[02/22 18:50:17    630s] Ring generation is complete.
+[02/22 19:03:33    737s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[02/22 19:03:33    737s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal10(10) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal10(10) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal10(10) }
+[02/22 19:03:34    737s] *** Begin SPECIAL ROUTE on Wed Feb 22 19:03:34 2023 ***
+[02/22 19:03:34    737s] SPECIAL ROUTE ran on directory: /net/ugrads/jtschir1/pvt/ee434/lab3
+[02/22 19:03:34    737s] SPECIAL ROUTE ran on machine: sig2.eecs.wsu.edu (Linux 3.10.0-1160.81.1.el7.x86_64 Xeon 2.40Ghz)
+[02/22 19:03:34    737s] 
+[02/22 19:03:34    737s] Begin option processing ...
+[02/22 19:03:34    737s] srouteConnectPowerBump set to false
+[02/22 19:03:34    737s] routeSelectNet set to "VDD VSS"
+[02/22 19:03:34    737s] routeSpecial set to true
+[02/22 19:03:34    737s] srouteBlockPin set to "useLef"
+[02/22 19:03:34    737s] srouteBottomLayerLimit set to 1
+[02/22 19:03:34    737s] srouteBottomTargetLayerLimit set to 1
+[02/22 19:03:34    737s] srouteConnectConverterPin set to false
+[02/22 19:03:34    737s] srouteCrossoverViaBottomLayer set to 1
+[02/22 19:03:34    737s] srouteCrossoverViaTopLayer set to 10
+[02/22 19:03:34    737s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[02/22 19:03:34    737s] srouteFollowCorePinEnd set to 3
+[02/22 19:03:34    737s] srouteJogControl set to "preferWithChanges differentLayer"
+[02/22 19:03:34    737s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[02/22 19:03:34    737s] sroutePadPinAllPorts set to true
+[02/22 19:03:34    737s] sroutePreserveExistingRoutes set to true
+[02/22 19:03:34    737s] srouteRoutePowerBarPortOnBothDir set to true
+[02/22 19:03:34    737s] srouteStopBlockPin set to "nearestTarget"
+[02/22 19:03:34    737s] srouteTopLayerLimit set to 10
+[02/22 19:03:34    737s] srouteTopTargetLayerLimit set to 10
+[02/22 19:03:34    737s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2927.00 megs.
+[02/22 19:03:34    737s] 
+[02/22 19:03:34    737s] Reading DB technology information...
+[02/22 19:03:34    737s] Finished reading DB technology information.
+[02/22 19:03:34    737s] Reading floorplan and netlist information...
+[02/22 19:03:34    737s] Finished reading floorplan and netlist information.
+[02/22 19:03:34    737s] Read in 20 layers, 10 routing layers, 1 overlap layer
+[02/22 19:03:34    737s] Read in 134 macros, 31 used
+[02/22 19:03:34    737s] Read in 31 components
+[02/22 19:03:34    737s]   31 core components: 31 unplaced, 0 placed, 0 fixed
+[02/22 19:03:34    737s] Read in 257 logical pins
+[02/22 19:03:34    737s] Read in 257 nets
+[02/22 19:03:34    737s] Read in 2 special nets, 2 routed
+[02/22 19:03:34    737s] 2 nets selected.
+[02/22 19:03:34    737s] 
+[02/22 19:03:34    737s] Begin power routing ...
+[02/22 19:03:34    737s] #create default rule from bind_ndr_rule rule=0x7f4bbed51ea0 0x7f4ba1dce018
+[02/22 19:03:34    737s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[02/22 19:03:35    737s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+[02/22 19:03:35    737s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[02/22 19:03:35    737s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[02/22 19:03:35    737s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[02/22 19:03:35    737s] Type 'man IMPSR-1256' for more detail.
+[02/22 19:03:35    737s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[02/22 19:03:35    737s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+[02/22 19:03:35    737s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[02/22 19:03:35    737s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[02/22 19:03:35    737s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[02/22 19:03:35    737s] Type 'man IMPSR-1256' for more detail.
+[02/22 19:03:35    737s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] CPU time for VDD FollowPin 0 seconds
+[02/22 19:03:35    737s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[02/22 19:03:35    737s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[02/22 19:03:35    737s] CPU time for VSS FollowPin 0 seconds
+[02/22 19:03:35    737s]   Number of IO ports routed: 0
+[02/22 19:03:35    737s]   Number of Block ports routed: 0
+[02/22 19:03:35    737s]   Number of Stripe ports routed: 0
+[02/22 19:03:35    737s]   Number of Core ports routed: 370
+[02/22 19:03:35    737s]   Number of Pad ports routed: 0
+[02/22 19:03:35    737s]   Number of Power Bump ports routed: 0
+[02/22 19:03:35    737s]   Number of Followpin connections: 185
+[02/22 19:03:35    737s] End power routing: cpu: 0:00:00, real: 0:00:01, peak: 2958.00 megs.
+[02/22 19:03:35    737s] 
+[02/22 19:03:35    737s] 
+[02/22 19:03:35    737s] 
+[02/22 19:03:35    737s]  Begin updating DB with routing results ...
+[02/22 19:03:35    737s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[02/22 19:03:35    737s] Pin and blockage extraction finished
+[02/22 19:03:35    737s] 
+[02/22 19:03:35    737s] sroute created 555 wires.
+[02/22 19:03:35    737s] ViaGen created 370 vias, deleted 0 via to avoid violation.
+[02/22 19:03:35    737s] +--------+----------------+----------------+
+[02/22 19:03:35    737s] |  Layer |     Created    |     Deleted    |
+[02/22 19:03:35    737s] +--------+----------------+----------------+
+[02/22 19:03:35    737s] | metal1 |       555      |       NA       |
+[02/22 19:03:35    737s] |  via1  |       370      |        0       |
+[02/22 19:03:35    737s] +--------+----------------+----------------+
+[02/22 19:04:22    741s] invalid command name "savesaveD"
+[02/22 19:04:35    743s] <CMD> saveDesign lab3_02_pg.enc
+[02/22 19:04:35    743s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 19:04:35    743s] % Begin save design ... (date=02/22 19:04:35, mem=1253.2M)
+[02/22 19:04:35    743s] % Begin Save ccopt configuration ... (date=02/22 19:04:35, mem=1253.2M)
+[02/22 19:04:35    743s] % End Save ccopt configuration ... (date=02/22 19:04:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1253.4M, current mem=1253.4M)
+[02/22 19:04:35    743s] % Begin Save netlist data ... (date=02/22 19:04:35, mem=1253.4M)
+[02/22 19:04:35    743s] Writing Binary DB to lab3_02_pg.enc.dat/myPMul32_4.v.bin in single-threaded mode...
+[02/22 19:04:35    743s] % End Save netlist data ... (date=02/22 19:04:35, total cpu=0:00:00.1, real=0:00:00.0, peak res=1253.4M, current mem=1253.1M)
+[02/22 19:04:35    743s] Saving symbol-table file ...
+[02/22 19:04:35    743s] Saving congestion map file lab3_02_pg.enc.dat/myPMul32_4.route.congmap.gz ...
+[02/22 19:04:36    744s] % Begin Save AAE data ... (date=02/22 19:04:36, mem=1253.2M)
+[02/22 19:04:36    744s] Saving AAE Data ...
+[02/22 19:04:36    744s] % End Save AAE data ... (date=02/22 19:04:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=1253.2M, current mem=1253.2M)
+[02/22 19:04:36    744s] Saving preference file lab3_02_pg.enc.dat/gui.pref.tcl ...
+[02/22 19:04:36    744s] Saving mode setting ...
+[02/22 19:04:36    744s] Saving global file ...
+[02/22 19:04:36    744s] % Begin Save floorplan data ... (date=02/22 19:04:36, mem=1253.4M)
+[02/22 19:04:36    744s] Saving floorplan file ...
+[02/22 19:04:37    744s] % End Save floorplan data ... (date=02/22 19:04:37, total cpu=0:00:00.1, real=0:00:01.0, peak res=1253.5M, current mem=1253.5M)
+[02/22 19:04:37    744s] Saving Drc markers ...
+[02/22 19:04:37    744s] ... No Drc file written since there is no markers found.
+[02/22 19:04:37    744s] % Begin Save placement data ... (date=02/22 19:04:37, mem=1253.5M)
+[02/22 19:04:37    744s] ** Saving stdCellPlacement_binary (version# 2) ...
+[02/22 19:04:37    744s] Save Adaptive View Pruning View Names to Binary file
+[02/22 19:04:37    744s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1533.9M) ***
+[02/22 19:04:37    744s] % End Save placement data ... (date=02/22 19:04:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1253.5M, current mem=1253.5M)
+[02/22 19:04:37    744s] % Begin Save routing data ... (date=02/22 19:04:37, mem=1253.5M)
+[02/22 19:04:37    744s] Saving route file ...
+[02/22 19:04:37    744s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1530.9M) ***
+[02/22 19:04:37    744s] % End Save routing data ... (date=02/22 19:04:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=1253.6M, current mem=1253.6M)
+[02/22 19:04:37    744s] Saving property file lab3_02_pg.enc.dat/myPMul32_4.prop
+[02/22 19:04:37    744s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1533.9M) ***
+[02/22 19:04:37    744s] % Begin Save power constraints data ... (date=02/22 19:04:37, mem=1253.6M)
+[02/22 19:04:37    744s] % End Save power constraints data ... (date=02/22 19:04:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1253.6M, current mem=1253.6M)
+[02/22 19:04:38    744s] Generated self-contained design lab3_02_pg.enc.dat
+[02/22 19:04:38    744s] % End save design ... (date=02/22 19:04:38, total cpu=0:00:00.8, real=0:00:03.0, peak res=1284.2M, current mem=1253.1M)
+[02/22 19:04:38    744s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[02/22 19:09:08    784s] <CMD> zoomBox -0.71950 180.22000 7.36500 171.28450
+[02/22 19:10:21    790s] **ERROR: (IMPSYT-16175):	<To Global Net> field must be specified.
+[02/22 19:12:10    807s] <CMD> clearGlobalNets
+[02/22 19:12:10    807s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename *
+[02/22 19:12:10    807s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename *
+[02/22 19:12:10    807s] <CMD> globalNetConnect VDD -type tiehi -pin VDD -instanceBasename *
+[02/22 19:12:10    807s] <CMD> globalNetConnect VSS -type tielo -pin VSS -instanceBasename *

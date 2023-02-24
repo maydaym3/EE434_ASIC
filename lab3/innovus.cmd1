@@ -1,0 +1,46 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Feb 23 20:52:30 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat myPMul32_4
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+clearGlobalNets
+globalNetConnect VDD -type pgpin -pin VDD -instanceBasename *
+globalNetConnect VDD -type tiehi -pin VDD -instanceBasename *
+globalNetConnect VSS -type pgpin -pin VSS -instanceBasename *
+globalNetConnect VSS -type tielo -pin VSS -instanceBasename *
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -maxRouteLayer 8 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setPlaceMode -fp false
+place_design
+setLayerPreference node_layer -isVisible 0
+setDrawView place
+setLayerPreference node_layer -isVisible 1
+saveDesign lab3_03_pl.enc
+zoomBox 123.10200 166.60350 131.61200 158.51900
+fit
