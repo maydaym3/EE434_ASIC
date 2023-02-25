@@ -44,3 +44,15 @@ setLayerPreference node_layer -isVisible 1
 saveDesign lab3_03_pl.enc
 zoomBox 123.10200 166.60350 131.61200 158.51900
 fit
+zoomBox 110.76250 143.20100 118.84700 138.52050
+selectWire 115.1400 137.5150 115.2100 141.3650 2 n1867
+setLayerPreference node_layer -isVisible 0
+deselectAll
+fit
+setDelayCalMode -siAware false
+timeDesign -preCTS
+selectInst mult_22/S2_57_61
+deselectAll
+report_power
+timeDesign -preCTS
+report_power

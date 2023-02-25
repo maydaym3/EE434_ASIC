@@ -1,0 +1,31 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Fri Feb 24 14:19:16 2023
+Host:		sig4.eecs.wsu.edu (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (3cores*6cpus*Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz 24576KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		[14:19:17.383932] Configured Lic search path (21.01-s002): :27012@linlic1.vcea.wsu.edu::27012@linlic1.vcea.wsu.edu
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Innovus terminated by user interrupt.
+
+*** Memory Usage v#1 (Current mem = 923.836M, initial mem = 476.039M) ***
+*** Message Summary: 1 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:20.6, real=0:00:56.0, mem=923.8M) ---

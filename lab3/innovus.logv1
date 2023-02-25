@@ -1784,3 +1784,480 @@
 [02/23 21:08:22    199s] 
 [02/23 21:11:24    226s] <CMD> zoomBox 123.10200 166.60350 131.61200 158.51900
 [02/23 21:11:37    226s] <CMD> fit
+[02/23 21:43:38    525s] <CMD> zoomBox 110.76250 143.20100 118.84700 138.52050
+[02/23 21:44:10    528s] <CMD> selectWire 115.1400 137.5150 115.2100 141.3650 2 n1867
+[02/23 21:45:09    533s] <CMD> setLayerPreference node_layer -isVisible 0
+[02/23 21:45:22    533s] <CMD> deselectAll
+[02/23 21:45:22    533s] <CMD> fit
+[02/23 21:45:48    534s] <CMD> setDelayCalMode -siAware false
+[02/23 21:46:05    537s] <CMD> timeDesign -preCTS
+[02/23 21:46:05    537s] AAE DB initialization (MEM=1798.43 CPU=0:00:00.0 REAL=0:00:00.0) 
+[02/23 21:46:05    537s] #optDebug: fT-S <1 1 0 0 0>
+[02/23 21:46:05    537s] *** timeDesign #1 [begin] : totSession cpu/real = 0:08:57.7/0:54:26.6 (0.2), mem = 1798.4M
+[02/23 21:46:05    537s] Setting timing_disable_library_data_to_data_checks to 'true'.
+[02/23 21:46:05    537s] Setting timing_disable_user_data_to_data_checks to 'true'.
+[02/23 21:46:05    537s] OPERPROF: Starting spDPlaceCleanup(full) at level 1, MEM:1792.4M, EPOCH TIME: 1677217565.665318
+[02/23 21:46:05    537s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:05    537s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:05    537s] All LLGs are deleted
+[02/23 21:46:05    537s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:05    537s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:05    537s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1792.4M, EPOCH TIME: 1677217565.665610
+[02/23 21:46:05    537s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1792.4M, EPOCH TIME: 1677217565.665797
+[02/23 21:46:05    537s] OPERPROF: Finished spDPlaceCleanup(full) at level 1, CPU:0.000, REAL:0.001, MEM:1792.4M, EPOCH TIME: 1677217565.665984
+[02/23 21:46:05    537s] Start to check current routing status for nets...
+[02/23 21:46:05    537s] All nets are already routed correctly.
+[02/23 21:46:05    537s] End to check current routing status for nets (mem=1792.4M)
+[02/23 21:46:05    537s] Extraction called for design 'myPMul32_4' of instances=13852 and nets=19954 using extraction engine 'preRoute' .
+[02/23 21:46:05    537s] **WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+[02/23 21:46:05    537s] Type 'man IMPEXT-3530' for more detail.
+[02/23 21:46:05    537s] PreRoute RC Extraction called for design myPMul32_4.
+[02/23 21:46:05    537s] RC Extraction called in multi-corner(1) mode.
+[02/23 21:46:05    537s] RCMode: PreRoute
+[02/23 21:46:05    537s]       RC Corner Indexes            0   
+[02/23 21:46:05    537s] Capacitance Scaling Factor   : 1.00000 
+[02/23 21:46:05    537s] Resistance Scaling Factor    : 1.00000 
+[02/23 21:46:05    537s] Clock Cap. Scaling Factor    : 1.00000 
+[02/23 21:46:05    537s] Clock Res. Scaling Factor    : 1.00000 
+[02/23 21:46:05    537s] Shrink Factor                : 1.00000
+[02/23 21:46:05    537s] PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+[02/23 21:46:05    537s] Using capacitance table file ...
+[02/23 21:46:05    537s] 
+[02/23 21:46:05    537s] Trim Metal Layers:
+[02/23 21:46:05    537s] LayerId::1 widthSet size::4
+[02/23 21:46:05    537s] LayerId::2 widthSet size::4
+[02/23 21:46:05    537s] LayerId::3 widthSet size::4
+[02/23 21:46:05    537s] LayerId::4 widthSet size::4
+[02/23 21:46:05    537s] LayerId::5 widthSet size::4
+[02/23 21:46:05    537s] LayerId::6 widthSet size::4
+[02/23 21:46:05    537s] LayerId::7 widthSet size::4
+[02/23 21:46:05    537s] LayerId::8 widthSet size::4
+[02/23 21:46:05    537s] LayerId::9 widthSet size::4
+[02/23 21:46:05    537s] LayerId::10 widthSet size::3
+[02/23 21:46:05    537s] Updating RC grid for preRoute extraction ...
+[02/23 21:46:05    537s] eee: pegSigSF::1.070000
+[02/23 21:46:05    537s] Initializing multi-corner capacitance tables ... 
+[02/23 21:46:05    537s] Initializing multi-corner resistance tables ...
+[02/23 21:46:05    537s] eee: l::1 avDens::0.095937 usedTrk::3837.469009 availTrk::40000.000000 sigTrk::3837.469009
+[02/23 21:46:05    537s] eee: l::2 avDens::0.138441 usedTrk::5080.776172 availTrk::36700.000000 sigTrk::5080.776172
+[02/23 21:46:05    537s] eee: l::3 avDens::0.136091 usedTrk::4681.542514 availTrk::34400.000000 sigTrk::4681.542514
+[02/23 21:46:05    537s] eee: l::4 avDens::0.004426 usedTrk::15.050000 availTrk::3400.000000 sigTrk::15.050000
+[02/23 21:46:05    537s] eee: l::5 avDens::0.021302 usedTrk::4.260357 availTrk::200.000000 sigTrk::4.260357
+[02/23 21:46:05    537s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/23 21:46:05    537s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/23 21:46:05    537s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/23 21:46:05    537s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/23 21:46:05    537s] eee: l::10 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[02/23 21:46:05    537s] {RT VRCCorner 0 10 10 {4 1} {7 0} {9 0} 3}
+[02/23 21:46:05    537s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=1.000000 uaWlH=0.001922 aWlH=0.000000 lMod=0 pMax=0.811000 pMod=83 wcR=0.500500 newSi=0.001600 wHLS=1.251250 siPrev=0 viaL=0.000000
+[02/23 21:46:05    538s] PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1800.430M)
+[02/23 21:46:05    538s] Effort level <high> specified for reg2reg path_group
+[02/23 21:46:06    538s] All LLGs are deleted
+[02/23 21:46:06    538s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:06    538s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:06    538s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1812.7M, EPOCH TIME: 1677217566.726827
+[02/23 21:46:06    538s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1812.7M, EPOCH TIME: 1677217566.727038
+[02/23 21:46:06    538s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1812.7M, EPOCH TIME: 1677217566.731449
+[02/23 21:46:06    538s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:06    538s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:06    538s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1812.7M, EPOCH TIME: 1677217566.731948
+[02/23 21:46:06    538s] Max number of tech site patterns supported in site array is 256.
+[02/23 21:46:06    538s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[02/23 21:46:06    538s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1812.7M, EPOCH TIME: 1677217566.736811
+[02/23 21:46:06    538s] After signature check, allow fast init is true, keep pre-filter is true.
+[02/23 21:46:06    538s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[02/23 21:46:06    538s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.002, MEM:1812.7M, EPOCH TIME: 1677217566.738326
+[02/23 21:46:06    538s] Fast DP-INIT is on for default
+[02/23 21:46:06    538s] Atter site array init, number of instance map data is 0.
+[02/23 21:46:06    538s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.010, REAL:0.013, MEM:1812.7M, EPOCH TIME: 1677217566.744900
+[02/23 21:46:06    538s] 
+[02/23 21:46:06    538s]  Pre_CCE_Colorizing is not ON! (0:0:134:0)
+[02/23 21:46:06    538s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.010, REAL:0.017, MEM:1812.7M, EPOCH TIME: 1677217566.748404
+[02/23 21:46:06    538s] All LLGs are deleted
+[02/23 21:46:06    538s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:06    538s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:06    538s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1812.7M, EPOCH TIME: 1677217566.755681
+[02/23 21:46:06    538s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1812.7M, EPOCH TIME: 1677217566.755882
+[02/23 21:46:06    538s] Starting delay calculation for Setup views
+[02/23 21:46:06    538s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[02/23 21:46:06    539s] #################################################################################
+[02/23 21:46:06    539s] # Design Stage: PreRoute
+[02/23 21:46:06    539s] # Design Name: myPMul32_4
+[02/23 21:46:06    539s] # Design Mode: 90nm
+[02/23 21:46:06    539s] # Analysis Mode: MMMC Non-OCV 
+[02/23 21:46:06    539s] # Parasitics Mode: No SPEF/RCDB 
+[02/23 21:46:06    539s] # Signoff Settings: SI Off 
+[02/23 21:46:06    539s] #################################################################################
+[02/23 21:46:06    539s] Calculate delays in Single mode...
+[02/23 21:46:06    539s] Topological Sorting (REAL = 0:00:00.0, MEM = 1810.7M, InitMEM = 1810.7M)
+[02/23 21:46:06    539s] Start delay calculation (fullDC) (1 T). (MEM=1810.73)
+[02/23 21:46:07    539s] siFlow : Timing analysis mode is single, using late cdB files
+[02/23 21:46:07    539s] Start AAE Lib Loading. (MEM=1822.25)
+[02/23 21:46:07    539s] End AAE Lib Loading. (MEM=1841.33 CPU=0:00:00.0 Real=0:00:00.0)
+[02/23 21:46:07    539s] End AAE Lib Interpolated Model. (MEM=1841.33 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[02/23 21:46:12    543s] Total number of fetched objects 20079
+[02/23 21:46:12    543s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[02/23 21:46:12    543s] End delay calculation. (MEM=1903.08 CPU=0:00:04.1 REAL=0:00:05.0)
+[02/23 21:46:12    543s] End delay calculation (fullDC). (MEM=1866.46 CPU=0:00:04.9 REAL=0:00:06.0)
+[02/23 21:46:12    543s] *** CDM Built up (cpu=0:00:05.0  real=0:00:06.0  mem= 1866.5M) ***
+[02/23 21:46:12    544s] *** Done Building Timing Graph (cpu=0:00:05.5 real=0:00:06.0 totSessionCpu=0:09:04 mem=1866.5M)
+[02/23 21:46:16    545s] 
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ VView1 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -2.200  | -2.200  |  6.361  |
+|           TNS (ns):| -96.583 | -96.583 |  0.000  |
+|    Violating Paths:|   70    |   70    |    0    |
+|          All Paths:|   384   |   256   |   128   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |    257 (257)     |   -0.077   |    257 (257)     |
+|   max_tran     |    128 (8165)    |   -0.151   |    128 (8165)    |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Tech dependent Parameter, Build TLibAnalyzer for: HybridTechSiteEnabled
+[02/23 21:46:16    545s] All LLGs are deleted
+[02/23 21:46:16    545s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1841.9M, EPOCH TIME: 1677217576.697121
+[02/23 21:46:16    545s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1841.9M, EPOCH TIME: 1677217576.697343
+[02/23 21:46:16    545s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1841.9M, EPOCH TIME: 1677217576.701733
+[02/23 21:46:16    545s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1841.9M, EPOCH TIME: 1677217576.702168
+[02/23 21:46:16    545s] Max number of tech site patterns supported in site array is 256.
+[02/23 21:46:16    545s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[02/23 21:46:16    545s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1841.9M, EPOCH TIME: 1677217576.706830
+[02/23 21:46:16    545s] After signature check, allow fast init is true, keep pre-filter is true.
+[02/23 21:46:16    545s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[02/23 21:46:16    545s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.001, MEM:1841.9M, EPOCH TIME: 1677217576.708219
+[02/23 21:46:16    545s] Fast DP-INIT is on for default
+[02/23 21:46:16    545s] Atter site array init, number of instance map data is 0.
+[02/23 21:46:16    545s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.020, REAL:0.011, MEM:1841.9M, EPOCH TIME: 1677217576.713209
+[02/23 21:46:16    545s] 
+[02/23 21:46:16    545s]  Pre_CCE_Colorizing is not ON! (0:0:134:0)
+[02/23 21:46:16    545s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.020, REAL:0.015, MEM:1841.9M, EPOCH TIME: 1677217576.716670
+[02/23 21:46:16    545s] All LLGs are deleted
+[02/23 21:46:16    545s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1841.9M, EPOCH TIME: 1677217576.722972
+[02/23 21:46:16    545s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.010, REAL:0.000, MEM:1841.9M, EPOCH TIME: 1677217576.723171
+[02/23 21:46:16    545s] Density: 48.563%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+All LLGs are deleted
+[02/23 21:46:16    545s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1841.9M, EPOCH TIME: 1677217576.730993
+[02/23 21:46:16    545s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1841.9M, EPOCH TIME: 1677217576.731196
+[02/23 21:46:16    545s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1841.9M, EPOCH TIME: 1677217576.735326
+[02/23 21:46:16    545s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1841.9M, EPOCH TIME: 1677217576.735700
+[02/23 21:46:16    545s] Max number of tech site patterns supported in site array is 256.
+[02/23 21:46:16    545s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[02/23 21:46:16    545s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1841.9M, EPOCH TIME: 1677217576.740198
+[02/23 21:46:16    545s] After signature check, allow fast init is true, keep pre-filter is true.
+[02/23 21:46:16    545s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[02/23 21:46:16    545s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.001, MEM:1841.9M, EPOCH TIME: 1677217576.741230
+[02/23 21:46:16    545s] Fast DP-INIT is on for default
+[02/23 21:46:16    545s] Atter site array init, number of instance map data is 0.
+[02/23 21:46:16    545s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.010, REAL:0.010, MEM:1841.9M, EPOCH TIME: 1677217576.746158
+[02/23 21:46:16    545s] 
+[02/23 21:46:16    545s]  Pre_CCE_Colorizing is not ON! (0:0:134:0)
+[02/23 21:46:16    545s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.010, REAL:0.014, MEM:1841.9M, EPOCH TIME: 1677217576.749600
+[02/23 21:46:16    545s] All LLGs are deleted
+[02/23 21:46:16    545s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 21:46:16    545s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1841.9M, EPOCH TIME: 1677217576.755895
+[02/23 21:46:16    545s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1841.9M, EPOCH TIME: 1677217576.756103
+[02/23 21:46:16    545s] Reported timing to dir ./timingReports
+[02/23 21:46:16    545s] Total CPU time: 7.97 sec
+[02/23 21:46:16    545s] Total Real time: 11.0 sec
+[02/23 21:46:16    545s] Total Memory Usage: 1841.878906 Mbytes
+[02/23 21:46:16    545s] Info: pop threads available for lower-level modules during optimization.
+[02/23 21:46:16    545s] *** timeDesign #1 [finish] : cpu/real = 0:00:07.9/0:00:11.3 (0.7), totSession cpu/real = 0:09:05.6/0:54:37.9 (0.2), mem = 1841.9M
+[02/23 21:46:16    545s] 
+[02/23 21:46:16    545s] =============================================================================================
+[02/23 21:46:16    545s]  Final TAT Report : timeDesign #1                                               21.15-s110_1
+[02/23 21:46:16    545s] =============================================================================================
+[02/23 21:46:16    545s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[02/23 21:46:16    545s] ---------------------------------------------------------------------------------------------
+[02/23 21:46:16    545s] [ ViewPruning            ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[02/23 21:46:16    545s] [ OptSummaryReport       ]      1   0:00:00.1  (   1.0 % )     0:00:10.0 /  0:00:06.7    0.7
+[02/23 21:46:16    545s] [ DrvReport              ]      1   0:00:03.2  (  28.5 % )     0:00:03.2 /  0:00:00.6    0.2
+[02/23 21:46:16    545s] [ ExtractRC              ]      1   0:00:00.2  (   1.6 % )     0:00:00.2 /  0:00:00.2    1.0
+[02/23 21:46:16    545s] [ TimingUpdate           ]      1   0:00:00.5  (   4.5 % )     0:00:05.9 /  0:00:05.5    0.9
+[02/23 21:46:16    545s] [ FullDelayCalc          ]      1   0:00:05.4  (  47.5 % )     0:00:05.4 /  0:00:05.0    0.9
+[02/23 21:46:16    545s] [ TimingReport           ]      1   0:00:00.2  (   2.1 % )     0:00:00.2 /  0:00:00.0    0.2
+[02/23 21:46:16    545s] [ GenerateReports        ]      1   0:00:00.6  (   5.0 % )     0:00:00.6 /  0:00:00.5    0.9
+[02/23 21:46:16    545s] [ MISC                   ]          0:00:01.1  (   9.8 % )     0:00:01.1 /  0:00:01.0    0.9
+[02/23 21:46:16    545s] ---------------------------------------------------------------------------------------------
+[02/23 21:46:16    545s]  timeDesign #1 TOTAL                0:00:11.3  ( 100.0 % )     0:00:11.3 /  0:00:07.9    0.7
+[02/23 21:46:16    545s] ---------------------------------------------------------------------------------------------
+[02/23 21:46:16    545s] 
+[02/23 22:36:35   1015s] <CMD> selectInst mult_22/S2_57_61
+[02/23 22:36:46   1015s] <CMD> deselectAll
+[02/23 22:53:46   1173s] <CMD> report_power
+[02/23 22:53:46   1173s] env CDS_WORKAREA is set to /net/ugrads/jtschir1/pvt/ee434/lab3
+[02/23 22:53:46   1173s] 
+[02/23 22:53:46   1173s] Power Net Detected:
+[02/23 22:53:46   1173s]         Voltage	    Name
+[02/23 22:53:46   1173s]              0V	    VSS
+[02/23 22:53:46   1173s]            1.1V	    VDD
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] Begin Power Analysis
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s]              0V	    VSS
+[02/23 22:53:46   1174s]            1.1V	    VDD
+[02/23 22:53:46   1174s] Begin Processing Timing Library for Power Calculation
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] Begin Processing Timing Library for Power Calculation
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] Begin Processing Power Net/Grid for Power Calculation
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1448.17MB/3302.34MB/1448.19MB)
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] Begin Processing Timing Window Data for Power Calculation
+[02/23 22:53:46   1174s] 
+[02/23 22:53:46   1174s] myCLK(156.25MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1448.31MB/3302.34MB/1448.31MB)
+[02/23 22:53:47   1174s] 
+[02/23 22:53:47   1174s] Begin Processing User Attributes
+[02/23 22:53:47   1174s] 
+[02/23 22:53:47   1174s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1448.39MB/3302.34MB/1448.39MB)
+[02/23 22:53:47   1174s] 
+[02/23 22:53:47   1174s] Begin Processing Signal Activity
+[02/23 22:53:47   1174s] 
+[02/23 22:53:47   1175s] Ended Processing Signal Activity: (cpu=0:00:01, real=0:00:00, mem(process/total/peak)=1448.85MB/3302.34MB/1448.85MB)
+[02/23 22:53:47   1175s] 
+[02/23 22:53:47   1175s] Begin Power Computation
+[02/23 22:53:47   1175s] 
+[02/23 22:53:47   1175s]       ----------------------------------------------------------
+[02/23 22:53:47   1175s]       # of cell(s) missing both power/leakage table: 0
+[02/23 22:53:47   1175s]       # of cell(s) missing power table: 0
+[02/23 22:53:47   1175s]       # of cell(s) missing leakage table: 0
+[02/23 22:53:47   1175s]       ----------------------------------------------------------
+[02/23 22:53:47   1175s] 
+[02/23 22:53:47   1175s] 
+[02/23 22:53:50   1177s]       # of MSMV cell(s) missing power_level: 0
+[02/23 22:53:50   1177s] Ended Power Computation: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=1447.75MB/3302.34MB/1448.85MB)
+[02/23 22:53:50   1177s] 
+[02/23 22:53:50   1177s] Begin Processing User Attributes
+[02/23 22:53:50   1177s] 
+[02/23 22:53:50   1177s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1447.76MB/3302.34MB/1448.85MB)
+[02/23 22:53:50   1177s] 
+[02/23 22:53:50   1177s] Ended Power Analysis: (cpu=0:00:03, real=0:00:03, mem(process/total/peak)=1447.82MB/3302.34MB/1448.85MB)
+[02/23 22:53:50   1177s] 
+[02/23 22:53:50   1177s] *
+
+
+
+[02/23 22:53:50   1177s] Total Power
+[02/23 22:53:50   1177s] -----------------------------------------------------------------------------------------
+[02/23 22:53:50   1177s] Total Internal Power:       14.43041322 	   56.7321%
+[02/23 22:53:50   1177s] Total Switching Power:      10.43564717 	   41.0270%
+[02/23 22:53:50   1177s] Total Leakage Power:         0.56999291 	    2.2409%
+[02/23 22:53:50   1177s] Total Power:                25.43605330
+[02/23 22:53:50   1177s] -----------------------------------------------------------------------------------------
+[02/23 23:02:42   1262s] <CMD> timeDesign -preCTS
+[02/23 23:02:42   1262s] #optDebug: fT-S <1 1 0 0 0>
+[02/23 23:02:42   1262s] *** timeDesign #2 [begin] : totSession cpu/real = 0:21:02.0/2:11:03.9 (0.2), mem = 1847.7M
+[02/23 23:02:42   1262s] OPERPROF: Starting spDPlaceCleanup(full) at level 1, MEM:1845.7M, EPOCH TIME: 1677222162.839522
+[02/23 23:02:42   1262s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:42   1262s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:42   1262s] All LLGs are deleted
+[02/23 23:02:42   1262s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:42   1262s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:42   1262s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1845.7M, EPOCH TIME: 1677222162.839764
+[02/23 23:02:42   1262s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1845.7M, EPOCH TIME: 1677222162.839925
+[02/23 23:02:42   1262s] OPERPROF: Finished spDPlaceCleanup(full) at level 1, CPU:0.000, REAL:0.001, MEM:1845.7M, EPOCH TIME: 1677222162.840099
+[02/23 23:02:42   1262s] Start to check current routing status for nets...
+[02/23 23:02:42   1262s] All nets are already routed correctly.
+[02/23 23:02:42   1262s] End to check current routing status for nets (mem=1845.7M)
+[02/23 23:02:42   1262s] Effort level <high> specified for reg2reg path_group
+[02/23 23:02:43   1262s] All LLGs are deleted
+[02/23 23:02:43   1262s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:43   1262s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:43   1262s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1847.7M, EPOCH TIME: 1677222163.320907
+[02/23 23:02:43   1262s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1847.7M, EPOCH TIME: 1677222163.321124
+[02/23 23:02:43   1262s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1848.7M, EPOCH TIME: 1677222163.325733
+[02/23 23:02:43   1262s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:43   1262s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:43   1262s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1848.7M, EPOCH TIME: 1677222163.326184
+[02/23 23:02:43   1262s] Max number of tech site patterns supported in site array is 256.
+[02/23 23:02:43   1262s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[02/23 23:02:43   1262s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1848.7M, EPOCH TIME: 1677222163.330870
+[02/23 23:02:43   1262s] After signature check, allow fast init is true, keep pre-filter is true.
+[02/23 23:02:43   1262s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[02/23 23:02:43   1262s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.001, MEM:1848.7M, EPOCH TIME: 1677222163.332353
+[02/23 23:02:43   1262s] Fast DP-INIT is on for default
+[02/23 23:02:43   1262s] Atter site array init, number of instance map data is 0.
+[02/23 23:02:43   1262s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.010, REAL:0.011, MEM:1848.7M, EPOCH TIME: 1677222163.337352
+[02/23 23:02:43   1262s] 
+[02/23 23:02:43   1262s]  Pre_CCE_Colorizing is not ON! (0:0:134:0)
+[02/23 23:02:43   1262s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.010, REAL:0.015, MEM:1848.7M, EPOCH TIME: 1677222163.340853
+[02/23 23:02:43   1262s] All LLGs are deleted
+[02/23 23:02:43   1262s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:43   1262s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:43   1262s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1848.7M, EPOCH TIME: 1677222163.347844
+[02/23 23:02:43   1262s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1848.7M, EPOCH TIME: 1677222163.348074
+[02/23 23:02:47   1263s] 
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ VView1 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -2.200  | -2.200  |  6.361  |
+|           TNS (ns):| -96.583 | -96.583 |  0.000  |
+|    Violating Paths:|   70    |   70    |    0    |
+|          All Paths:|   384   |   256   |   128   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |    257 (257)     |   -0.077   |    257 (257)     |
+|   max_tran     |    128 (8165)    |   -0.151   |    128 (8165)    |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Tech dependent Parameter, Build TLibAnalyzer for: HybridTechSiteEnabled
+[02/23 23:02:47   1264s] All LLGs are deleted
+[02/23 23:02:47   1264s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1848.9M, EPOCH TIME: 1677222167.467452
+[02/23 23:02:47   1264s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1848.9M, EPOCH TIME: 1677222167.467684
+[02/23 23:02:47   1264s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1848.9M, EPOCH TIME: 1677222167.471803
+[02/23 23:02:47   1264s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1848.9M, EPOCH TIME: 1677222167.472238
+[02/23 23:02:47   1264s] Max number of tech site patterns supported in site array is 256.
+[02/23 23:02:47   1264s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[02/23 23:02:47   1264s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1848.9M, EPOCH TIME: 1677222167.476839
+[02/23 23:02:47   1264s] After signature check, allow fast init is true, keep pre-filter is true.
+[02/23 23:02:47   1264s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[02/23 23:02:47   1264s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.001, MEM:1848.9M, EPOCH TIME: 1677222167.478222
+[02/23 23:02:47   1264s] Fast DP-INIT is on for default
+[02/23 23:02:47   1264s] Atter site array init, number of instance map data is 0.
+[02/23 23:02:47   1264s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.010, REAL:0.011, MEM:1848.9M, EPOCH TIME: 1677222167.483184
+[02/23 23:02:47   1264s] 
+[02/23 23:02:47   1264s]  Pre_CCE_Colorizing is not ON! (0:0:134:0)
+[02/23 23:02:47   1264s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.020, REAL:0.015, MEM:1848.9M, EPOCH TIME: 1677222167.486626
+[02/23 23:02:47   1264s] All LLGs are deleted
+[02/23 23:02:47   1264s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1848.9M, EPOCH TIME: 1677222167.492950
+[02/23 23:02:47   1264s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1848.9M, EPOCH TIME: 1677222167.493154
+[02/23 23:02:47   1264s] Density: 48.563%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+All LLGs are deleted
+[02/23 23:02:47   1264s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1848.9M, EPOCH TIME: 1677222167.500903
+[02/23 23:02:47   1264s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1848.9M, EPOCH TIME: 1677222167.501104
+[02/23 23:02:47   1264s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1848.9M, EPOCH TIME: 1677222167.505191
+[02/23 23:02:47   1264s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1848.9M, EPOCH TIME: 1677222167.505562
+[02/23 23:02:47   1264s] Max number of tech site patterns supported in site array is 256.
+[02/23 23:02:47   1264s] Core basic site is FreePDK45_38x28_10R_NP_162NW_34O
+[02/23 23:02:47   1264s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1848.9M, EPOCH TIME: 1677222167.510068
+[02/23 23:02:47   1264s] After signature check, allow fast init is true, keep pre-filter is true.
+[02/23 23:02:47   1264s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[02/23 23:02:47   1264s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.001, MEM:1848.9M, EPOCH TIME: 1677222167.511114
+[02/23 23:02:47   1264s] Fast DP-INIT is on for default
+[02/23 23:02:47   1264s] Atter site array init, number of instance map data is 0.
+[02/23 23:02:47   1264s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.010, REAL:0.011, MEM:1848.9M, EPOCH TIME: 1677222167.516084
+[02/23 23:02:47   1264s] 
+[02/23 23:02:47   1264s]  Pre_CCE_Colorizing is not ON! (0:0:134:0)
+[02/23 23:02:47   1264s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.010, REAL:0.014, MEM:1848.9M, EPOCH TIME: 1677222167.519538
+[02/23 23:02:47   1264s] All LLGs are deleted
+[02/23 23:02:47   1264s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[02/23 23:02:47   1264s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1848.9M, EPOCH TIME: 1677222167.525868
+[02/23 23:02:47   1264s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1848.9M, EPOCH TIME: 1677222167.526071
+[02/23 23:02:47   1264s] Reported timing to dir ./timingReports
+[02/23 23:02:47   1264s] Total CPU time: 2.07 sec
+[02/23 23:02:47   1264s] Total Real time: 5.0 sec
+[02/23 23:02:47   1264s] Total Memory Usage: 1848.886719 Mbytes
+[02/23 23:02:47   1264s] Info: pop threads available for lower-level modules during optimization.
+[02/23 23:02:47   1264s] *** timeDesign #2 [finish] : cpu/real = 0:00:02.1/0:00:04.7 (0.4), totSession cpu/real = 0:21:04.1/2:11:08.6 (0.2), mem = 1848.9M
+[02/23 23:02:47   1264s] 
+[02/23 23:02:47   1264s] =============================================================================================
+[02/23 23:02:47   1264s]  Final TAT Report : timeDesign #2                                               21.15-s110_1
+[02/23 23:02:47   1264s] =============================================================================================
+[02/23 23:02:47   1264s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[02/23 23:02:47   1264s] ---------------------------------------------------------------------------------------------
+[02/23 23:02:47   1264s] [ ViewPruning            ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[02/23 23:02:47   1264s] [ OptSummaryReport       ]      1   0:00:00.1  (   2.4 % )     0:00:04.2 /  0:00:01.6    0.4
+[02/23 23:02:47   1264s] [ DrvReport              ]      1   0:00:03.2  (  67.8 % )     0:00:03.2 /  0:00:00.6    0.2
+[02/23 23:02:47   1264s] [ TimingUpdate           ]      1   0:00:00.4  (   7.7 % )     0:00:00.4 /  0:00:00.4    1.0
+[02/23 23:02:47   1264s] [ TimingReport           ]      1   0:00:00.0  (   0.7 % )     0:00:00.0 /  0:00:00.0    0.9
+[02/23 23:02:47   1264s] [ GenerateReports        ]      1   0:00:00.5  (  10.2 % )     0:00:00.5 /  0:00:00.5    1.0
+[02/23 23:02:47   1264s] [ MISC                   ]          0:00:00.5  (  11.1 % )     0:00:00.5 /  0:00:00.5    0.9
+[02/23 23:02:47   1264s] ---------------------------------------------------------------------------------------------
+[02/23 23:02:47   1264s]  timeDesign #2 TOTAL                0:00:04.7  ( 100.0 % )     0:00:04.7 /  0:00:02.1    0.4
+[02/23 23:02:47   1264s] ---------------------------------------------------------------------------------------------
+[02/23 23:02:47   1264s] 
+[02/23 23:03:44   1273s] <CMD> report_power
+[02/23 23:03:44   1273s] env CDS_WORKAREA is set to /net/ugrads/jtschir1/pvt/ee434/lab3
+[02/23 23:03:45   1273s] *
+
+
+
+[02/23 23:03:45   1273s] Total Power
+[02/23 23:03:45   1273s] -----------------------------------------------------------------------------------------
+[02/23 23:03:45   1273s] Total Internal Power:       14.43041322 	   56.7321%
+[02/23 23:03:45   1273s] Total Switching Power:      10.43564717 	   41.0270%
+[02/23 23:03:45   1273s] Total Leakage Power:         0.56999291 	    2.2409%
+[02/23 23:03:45   1273s] Total Power:                25.43605330
+[02/23 23:03:45   1273s] -----------------------------------------------------------------------------------------
+[02/23 23:23:37   1457s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Feb 23 23:23:37 2023
+  Total CPU time:     0:24:30
+  Total real time:    2:33:01
+  Peak memory (main): 1457.16MB
+
+[02/23 23:23:37   1457s] 
+[02/23 23:23:37   1457s] *** Memory Usage v#1 (Current mem = 1854.730M, initial mem = 476.039M) ***
+[02/23 23:23:37   1457s] 
+[02/23 23:23:37   1457s] *** Summary of all messages that are not suppressed in this session:
+[02/23 23:23:37   1457s] Severity  ID               Count  Summary                                  
+[02/23 23:23:37   1457s] WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+[02/23 23:23:37   1457s] WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+[02/23 23:23:37   1457s] WARNING   IMPSP-105            1  'setPlaceMode -maxRouteLayer' will becom...
+[02/23 23:23:37   1457s] WARNING   IMPSP-9525           1  setPlaceMode -maxRouteLayer will overwri...
+[02/23 23:23:37   1457s] WARNING   IMPSP-9526           1  Restoring setTrialRouteMode -maxRouteLay...
+[02/23 23:23:37   1457s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[02/23 23:23:37   1457s] WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+[02/23 23:23:37   1457s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[02/23 23:23:37   1457s] WARNING   IMPPSP-1003          2  Found use of '%s'. This will continue to...
+[02/23 23:23:37   1457s] *** Message Summary: 11 warning(s), 0 error(s)
+[02/23 23:23:37   1457s] 
+[02/23 23:23:37   1457s] --- Ending "Innovus" (totcpu=0:24:18, real=2:32:43, mem=1854.7M) ---

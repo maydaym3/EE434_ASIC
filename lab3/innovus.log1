@@ -532,3 +532,396 @@ Generated self-contained design lab3_03_pl.enc.dat
 
 <CMD> zoomBox 123.10200 166.60350 131.61200 158.51900
 <CMD> fit
+<CMD> zoomBox 110.76250 143.20100 118.84700 138.52050
+<CMD> selectWire 115.1400 137.5150 115.2100 141.3650 2 n1867
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> deselectAll
+<CMD> fit
+<CMD> setDelayCalMode -siAware false
+<CMD> timeDesign -preCTS
+AAE DB initialization (MEM=1798.43 CPU=0:00:00.0 REAL=0:00:00.0) 
+*** timeDesign #1 [begin] : totSession cpu/real = 0:08:57.7/0:54:26.6 (0.2), mem = 1798.4M
+Setting timing_disable_library_data_to_data_checks to 'true'.
+Setting timing_disable_user_data_to_data_checks to 'true'.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1792.4M)
+Extraction called for design 'myPMul32_4' of instances=13852 and nets=19954 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design myPMul32_4.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1800.430M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: myPMul32_4
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=1810.73)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 20079
+End delay calculation. (MEM=1903.08 CPU=0:00:04.1 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=1866.46 CPU=0:00:04.9 REAL=0:00:06.0)
+*** Done Building Timing Graph (cpu=0:00:05.5 real=0:00:06.0 totSessionCpu=0:09:04 mem=1866.5M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ VView1 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -2.200  | -2.200  |  6.361  |
+|           TNS (ns):| -96.583 | -96.583 |  0.000  |
+|    Violating Paths:|   70    |   70    |    0    |
+|          All Paths:|   384   |   256   |   128   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |    257 (257)     |   -0.077   |    257 (257)     |
+|   max_tran     |    128 (8165)    |   -0.151   |    128 (8165)    |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 48.563%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 7.97 sec
+Total Real time: 11.0 sec
+Total Memory Usage: 1841.878906 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:07.9/0:00:11.3 (0.7), totSession cpu/real = 0:09:05.6/0:54:37.9 (0.2), mem = 1841.9M
+<CMD> selectInst mult_22/S2_57_61
+<CMD> deselectAll
+<CMD> report_power
+env CDS_WORKAREA is set to /net/ugrads/jtschir1/pvt/ee434/lab3
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+Using Power View: VView1.
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1448.17MB/3302.34MB/1448.19MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+myCLK(156.25MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1448.31MB/3302.34MB/1448.31MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1448.39MB/3302.34MB/1448.39MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT)
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 10%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 20%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 30%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 40%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 50%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 60%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 70%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 80%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 90%
+
+Finished Levelizing
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT)
+
+Starting Activity Propagation
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 10%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 20%
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT): 30%
+
+Finished Activity Propagation
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT)
+Ended Processing Signal Activity: (cpu=0:00:01, real=0:00:00, mem(process/total/peak)=1448.85MB/3302.34MB/1448.85MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2023-Feb-23 22:53:47 (2023-Feb-24 06:53:47 GMT)
+ ... Calculating switching power
+2023-Feb-23 22:53:48 (2023-Feb-24 06:53:48 GMT): 10%
+2023-Feb-23 22:53:48 (2023-Feb-24 06:53:48 GMT): 20%
+2023-Feb-23 22:53:48 (2023-Feb-24 06:53:48 GMT): 30%
+2023-Feb-23 22:53:48 (2023-Feb-24 06:53:48 GMT): 40%
+2023-Feb-23 22:53:48 (2023-Feb-24 06:53:48 GMT): 50%
+ ... Calculating internal and leakage power
+2023-Feb-23 22:53:48 (2023-Feb-24 06:53:48 GMT): 60%
+2023-Feb-23 22:53:49 (2023-Feb-24 06:53:49 GMT): 70%
+2023-Feb-23 22:53:49 (2023-Feb-24 06:53:49 GMT): 80%
+2023-Feb-23 22:53:49 (2023-Feb-24 06:53:49 GMT): 90%
+
+Finished Calculating power
+2023-Feb-23 22:53:50 (2023-Feb-24 06:53:50 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=1447.75MB/3302.34MB/1448.85MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1447.76MB/3302.34MB/1448.85MB)
+
+Ended Power Analysis: (cpu=0:00:03, real=0:00:03, mem(process/total/peak)=1447.82MB/3302.34MB/1448.85MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1447.83MB/3302.34MB/1448.85MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2023-Feb-23 22:53:50 (2023-Feb-24 06:53:50 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: myPMul32_4
+*
+*	Liberty Libraries used:
+*	        VView1: /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/libs/mmmc/NangateOpenCellLibrary_typical.lib
+*
+*	Parasitic Files used:
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       14.43041322 	   56.7321%
+Total Switching Power:      10.43564717 	   41.0270%
+Total Leakage Power:         0.56999291 	    2.2409%
+Total Power:                25.43605330
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.6507       1.611     0.03057       2.292       9.012
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      13.78       8.825      0.5394       23.14       90.99
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              14.43       10.44        0.57       25.44         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      14.43       10.44        0.57       25.44         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:         reg_mid_1_reg[38] (DFF_X1):          0.01596
+*              Highest Leakage Power:          reg_out_reg[117] (DFF_X2):        0.0001151
+*                Total Cap:      9.71785e-11 F
+*                Total instances in design: 13852
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1450.08MB/3304.09MB/1450.19MB)
+
+<CMD> timeDesign -preCTS
+*** timeDesign #2 [begin] : totSession cpu/real = 0:21:02.0/2:11:03.9 (0.2), mem = 1847.7M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1845.7M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ VView1 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -2.200  | -2.200  |  6.361  |
+|           TNS (ns):| -96.583 | -96.583 |  0.000  |
+|    Violating Paths:|   70    |   70    |    0    |
+|          All Paths:|   384   |   256   |   128   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |    257 (257)     |   -0.077   |    257 (257)     |
+|   max_tran     |    128 (8165)    |   -0.151   |    128 (8165)    |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 48.563%
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 2.07 sec
+Total Real time: 5.0 sec
+Total Memory Usage: 1848.886719 Mbytes
+*** timeDesign #2 [finish] : cpu/real = 0:00:02.1/0:00:04.7 (0.4), totSession cpu/real = 0:21:04.1/2:11:08.6 (0.2), mem = 1848.9M
+<CMD> report_power
+env CDS_WORKAREA is set to /net/ugrads/jtschir1/pvt/ee434/lab3
+Using Power View: VView1.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1447.32MB/3305.25MB/1450.19MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2023-Feb-23 23:03:45 (2023-Feb-24 07:03:45 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: myPMul32_4
+*
+*	Liberty Libraries used:
+*	        VView1: /net/ugrads/jtschir1/pvt/ee434/lab3/lab3_02_pg.enc.dat/libs/mmmc/NangateOpenCellLibrary_typical.lib
+*
+*	Parasitic Files used:
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       14.43041322 	   56.7321%
+Total Switching Power:      10.43564717 	   41.0270%
+Total Leakage Power:         0.56999291 	    2.2409%
+Total Power:                25.43605330
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.6507       1.611     0.03057       2.292       9.012
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      13.78       8.825      0.5394       23.14       90.99
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              14.43       10.44        0.57       25.44         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      14.43       10.44        0.57       25.44         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:         reg_mid_1_reg[38] (DFF_X1):          0.01596
+*              Highest Leakage Power:          reg_out_reg[117] (DFF_X2):        0.0001151
+*                Total Cap:      9.71785e-11 F
+*                Total instances in design: 13852
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1450.58MB/3307.00MB/1450.82MB)
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Feb 23 23:23:37 2023
+  Total CPU time:     0:24:30
+  Total real time:    2:33:01
+  Peak memory (main): 1457.16MB
+
+
+*** Memory Usage v#1 (Current mem = 1854.730M, initial mem = 476.039M) ***
+*** Message Summary: 11 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:24:18, real=2:32:43, mem=1854.7M) ---
